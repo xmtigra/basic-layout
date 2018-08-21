@@ -1,0 +1,16 @@
+extends includes/layout.pug
+
+block content
+  .container
+    .header
+      ul.nav.nav-pills.float-right
+        li.nav-item
+          a.nav-link.active(href='/index.html') Home
+        li
+          a.nav-link(href='about.html') About
+        li
+          a.nav-link(href='contact.html') Contact
+      h3.text-muted basic layout
+    include includes/jumbotron.pug
+    include includes/footer.pug
+

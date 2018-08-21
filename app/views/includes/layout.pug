@@ -1,0 +1,35 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    // Place favicon.ico in the root directory
+    // build:css styles/main.css
+    block main_styles
+      link(rel='stylesheet', href='styles/main.css')
+    // endbuild
+    block title
+      title basic layout
+  body
+    //if IE
+      p.browserupgrade
+        | You are using an
+        strong outdated
+        |  browser. Please
+        a(href='http://browsehappy.com/') upgrade your browser
+        |  to improve your experience.
+    block content
+
+    // build:js scripts/vendor.js
+    block plugins_vendor
+    // endbuild
+    // build:js scripts/plugins.js
+    block plugins_scripts
+    // endbuild
+    // build:js scripts/main.js
+    block main_scripts
+      script(src='scripts/main.js')
+    // endbuild
+
+
