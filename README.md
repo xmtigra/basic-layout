@@ -7,5 +7,5 @@
 ## build project
 `gulp`
 
-## indstall all packages
+## install all packages
 `npm i or yarn i`
