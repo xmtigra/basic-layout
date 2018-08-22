@@ -1,0 +1,71 @@
+header#custom_header
+  .container
+    a.head-logo(href='https://staging-web.good.co')
+    #mobile-login
+      ul.menu.header-login
+        li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children
+          a(href='#') Log In
+          ul.sub-menu
+            li.menu-item.menu-item-type-post_type.menu-item-object-page
+              a(data-toggle='modal', data-target='#LoginOptionsModal') Workplace Happiness
+            li.menu-item.menu-item-type-post_type.menu-item-object-page
+              a(data-toggle='modal', data-target='#LoginOptionsModalTD') Teamwork Pro
+    .header_mobile
+      ul#head_menu.menu
+        li#menu-item-6.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-6
+          a(href='#', itemprop='url') Products
+          ul.sub-menu
+            li#menu-item-5886.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-5886
+              a(target='_blank', href='https://app.adjust.com/5dlf1u?campaign=Corporate_site&adgroup=Aboutus_learnmore_CTA', itemprop='url') Workplace Happiness
+            li#menu-item-6442.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-6442
+              a(href='https://staging-web.good.co/teamworkpro/', itemprop='url') Teamwork Pro
+        li#menu-item-660.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children.menu-item-660
+          a(href='#', itemprop='url') Our Science
+          ul.sub-menu
+            li#menu-item-126.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-126
+              a(href='https://staging-web.good.co/our-science/background/', itemprop='url') Background
+            li#menu-item-1173.menu-item.menu-item-type-post_type_archive.menu-item-object-personas.menu-item-1173
+              a(href='https://staging-web.good.co/personas/', itemprop='url') People Personas
+            li#menu-item-1174.menu-item.menu-item-type-post_type_archive.menu-item-object-company-personas.menu-item-1174
+              a(href='https://staging-web.good.co/company-personas/', itemprop='url') Company Personas
+        li#menu-item-5979.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-5979
+          a(target='_blank', href='/blog/', itemprop='url') Company Culture
+        li#menu-item-5651.btn.btn-small.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-5651
+          a(href='https://staging-web.good.co/teamworkpro/', itemprop='url') Employer Tools
+      #search-form-wrap
+        #search-form
+          form.header_search.dt(action='/search/company', data-action-companies='/search/company', data-action-people='/search/profile', target='_blank')
+            .select
+              i.fa.fa-angle-down
+              select
+                option(value='companies') Companies
+                option(value='people') People
+            input.search(type='search', value='', name='query', placeholder='Search Companies, e.g. Apple', data-placeholder-companies='Search Companies, e.g. Apple', data-placeholder-people='Search 2.7M professionals')
+            label.submit
+              input(type='submit', value='')
+      .right
+        #search-wrap
+          #search-form-toggle
+        .language-switcher
+          .language-switcher-icon
+          ul#headerlanguageswitcher.menu
+            li#menu-item-wpml-ls-1095-en.menu-item.wpml-ls-slot-1095.wpml-ls-item.wpml-ls-item-en.wpml-ls-current-language.wpml-ls-menu-item.wpml-ls-first-item.menu-item-type-wpml_ls_menu_item.menu-item-object-wpml_ls_menu_item.menu-item-has-children.menu-item-wpml-ls-1095-en
+              a(title='English', href='https://staging-web.good.co', itemprop='url')
+                span.wpml-ls-native English
+              ul.sub-menu
+                li#menu-item-wpml-ls-1095-de.menu-item.wpml-ls-slot-1095.wpml-ls-item.wpml-ls-item-de.wpml-ls-menu-item.wpml-ls-last-item.menu-item-type-wpml_ls_menu_item.menu-item-object-wpml_ls_menu_item.menu-item-wpml-ls-1095-de
+                  a(title='Deutsch', href='https://staging-web.good.co/de/', itemprop='url')
+                    span.wpml-ls-native Deutsch
+        ul.menu.header-login
+          li.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-has-children
+            a(href='#') Log In
+            ul.sub-menu
+              li.menu-item.menu-item-type-post_type.menu-item-object-page
+                a(data-toggle='modal', data-target='#LoginOptionsModal') Workplace Happiness
+              li.menu-item.menu-item-type-post_type.menu-item-object-page
+                a(data-toggle='modal', data-target='#LoginOptionsModalTD') Teamwork Pro
+    #menu-icon
+      span.icon1
+      span.icon2.mid
+      span.icon3
+      .mflag

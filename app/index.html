@@ -20,23 +20,310 @@
       a(href='http://browsehappy.com/') upgrade your browser
       |  to improve your experience.
     -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
-          <li><a class="nav-link" href="about.html">About</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">basic layout</h3>
-      </div>
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Contact page</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-      <div class="footer">
-        <p>© Andriy Pyvovarchuk</p>
-      </div>
+    <div class="page">
+      <section class="main-wrapper">
+        <header id="custom_header">
+          <div class="container"><a class="head-logo" href="https://staging-web.good.co"></a>
+            <div id="mobile-login">
+              <ul class="menu header-login">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Log In</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a data-toggle="modal" data-target="#LoginOptionsModal">Workplace Happiness</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a data-toggle="modal" data-target="#LoginOptionsModalTD">Teamwork Pro</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="header_mobile">
+              <ul class="menu" id="head_menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-6" id="menu-item-6"><a href="#" itemprop="url">Products</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5886" id="menu-item-5886"><a target="_blank" href="https://app.adjust.com/5dlf1u?campaign=Corporate_site&amp;adgroup=Aboutus_learnmore_CTA" itemprop="url">Workplace Happiness</a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6442" id="menu-item-6442"><a href="https://staging-web.good.co/teamworkpro/" itemprop="url">Teamwork Pro</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-660" id="menu-item-660"><a href="#" itemprop="url">Our Science</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126" id="menu-item-126"><a href="https://staging-web.good.co/our-science/background/" itemprop="url">Background</a></li>
+                    <li class="menu-item menu-item-type-post_type_archive menu-item-object-personas menu-item-1173" id="menu-item-1173"><a href="https://staging-web.good.co/personas/" itemprop="url">People Personas</a></li>
+                    <li class="menu-item menu-item-type-post_type_archive menu-item-object-company-personas menu-item-1174" id="menu-item-1174"><a href="https://staging-web.good.co/company-personas/" itemprop="url">Company Personas</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5979" id="menu-item-5979"><a target="_blank" href="/blog/" itemprop="url">Company Culture</a></li>
+                <li class="btn btn-small menu-item menu-item-type-post_type menu-item-object-page menu-item-5651" id="menu-item-5651"><a href="https://staging-web.good.co/teamworkpro/" itemprop="url">Employer Tools</a></li>
+              </ul>
+              <div id="search-form-wrap">
+                <div id="search-form">
+                  <form class="header_search dt" action="/search/company" data-action-companies="/search/company" data-action-people="/search/profile" target="_blank">
+                    <div class="select"><i class="fa fa-angle-down"></i>
+                      <select>
+                        <option value="companies">Companies</option>
+                        <option value="people">People</option>
+                      </select>
+                    </div>
+                    <input class="search" type="search" value="" name="query" placeholder="Search Companies, e.g. Apple" data-placeholder-companies="Search Companies, e.g. Apple" data-placeholder-people="Search 2.7M professionals"/>
+                    <label class="submit">
+                      <input type="submit" value=""/>
+                    </label>
+                  </form>
+                </div>
+              </div>
+              <div class="right">
+                <div id="search-wrap">
+                  <div id="search-form-toggle"></div>
+                </div>
+                <div class="language-switcher">
+                  <div class="language-switcher-icon"></div>
+                  <ul class="menu" id="headerlanguageswitcher">
+                    <li class="menu-item wpml-ls-slot-1095 wpml-ls-item wpml-ls-item-en wpml-ls-current-language wpml-ls-menu-item wpml-ls-first-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-has-children menu-item-wpml-ls-1095-en" id="menu-item-wpml-ls-1095-en"><a title="English" href="https://staging-web.good.co" itemprop="url"><span class="wpml-ls-native">English</span></a>
+                      <ul class="sub-menu">
+                        <li class="menu-item wpml-ls-slot-1095 wpml-ls-item wpml-ls-item-de wpml-ls-menu-item wpml-ls-last-item menu-item-type-wpml_ls_menu_item menu-item-object-wpml_ls_menu_item menu-item-wpml-ls-1095-de" id="menu-item-wpml-ls-1095-de"><a title="Deutsch" href="https://staging-web.good.co/de/" itemprop="url"><span class="wpml-ls-native">Deutsch</span></a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <ul class="menu header-login">
+                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Log In</a>
+                    <ul class="sub-menu">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a data-toggle="modal" data-target="#LoginOptionsModal">Workplace Happiness</a></li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page"><a data-toggle="modal" data-target="#LoginOptionsModalTD">Teamwork Pro</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div id="menu-icon"><span class="icon1"></span><span class="icon2 mid"></span><span class="icon3"></span>
+              <div class="mflag"></div>
+            </div>
+          </div>
+        </header>
+        <div class="main-content-wrapper">
+          <div class="container-full">
+            <main class="main-content" id="main-content">
+              <article>
+                <section class="langing-box langing-box_gray">
+                  <div class="container">
+                    <div class="landing-logos">
+                      <div class="landing-logos__item"><img class="landing-logos__img" src="images/coca.png" alt="coca"/></div>
+                      <div class="landing-logos__item"><img class="landing-logos__img" src="images/totaljobs.png" alt="totaljobs"/></div>
+                      <div class="landing-logos__item"><img class="landing-logos__img" src="images/axel.png" alt="axel"/></div>
+                      <div class="landing-logos__item"><img class="landing-logos__img" src="images/stepstone.png" alt="stepstone"/></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="langing-box">
+                  <div class="container">
+                    <div class="landing-article">
+                      <div class="landing-article__title">TEAMWORK</div>
+                      <div class="landing-article__description">Understand team dynamics, and optimize engagement and performance.</div>
+                      <div class="landing-article__box landing-article__box_reverse">
+                        <div class="landing-article__box-side">
+                          <figure class="landing-article__figure landing-article__figure_left"><img class="landing-article__img" src="images/image-2.png" alt="image"/></figure>
+                        </div>
+                        <div class="landing-article__box-side">
+                          <div class="landing-article__text-gray">With Teamwork Pro</div>
+                          <div class="landing-article__text-blue">Identify strengths and weaknesses, and pinpoint issues that might become problems.</div>
+                          <div class="landing-article__text-gray">Without</div>
+                          <div class="landing-article__text-black">Small problems become bigger problems, and by then it’s too late to act.</div><a class="landing-article__more">Learn more</a>
+                        </div>
+                      </div>
+                      <div class="landing-article__box">
+                        <div class="landing-article__box-side">
+                          <figure class="landing-article__figure landing-article__figure_right"><img class="landing-article__img" src="images/image-3.png" alt="image"/></figure>
+                        </div>
+                        <div class="landing-article__box-side">
+                          <div class="landing-article__text-gray">With Teamwork Pro</div>
+                          <div class="landing-article__text-blue">Improve engagement, and attract and retain talent.</div>
+                          <div class="landing-article__text-gray">Without</div>
+                          <div class="landing-article__text-black">Productivity will remain low and you might lose unhappy employees due to conﬂict.</div><a class="landing-article__more">Learn more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="langing-box langing-box_gray">
+                  <div class="container">
+                    <div class="landing-quote">
+                      <div class="landing-quote__text">“Job seekers need more insight than the often opaque information provided in a job description or company proﬁle. Good&Co provides the transparency needed on both sides that enables better culture ﬁt for both candidates and companies.”</div>
+                      <div class="landing-quote__author">― Tim Proehm, Senior Director, RPO Center of Excellence at Kelly Outsourcing and Consulting Group</div>
+                    </div>
+                  </div>
+                </section>
+                <section class="langing-box">
+                  <div class="container">
+                    <div class="landing-article">
+                      <div class="landing-article__title">RECRUIT</div>
+                      <div class="landing-article__description">Make better decisions, replicate them, and speed up time to hire.</div>
+                      <div class="landing-article__box landing-article__box_reverse">
+                        <div class="landing-article__box-side">
+                          <figure class="landing-article__figure landing-article__figure_left"><img class="landing-article__img" src="images/image-6.png" alt="image"/></figure>
+                        </div>
+                        <div class="landing-article__box-side">
+                          <div class="landing-article__text-gray">With Teamwork Pro</div>
+                          <div class="landing-article__text-blue">Focus eforts on the best candidates. See how they ﬁt in relation to the team  and each other.</div>
+                          <div class="landing-article__text-gray">Without</div>
+                          <div class="landing-article__text-black">Waste time screening candidates who look good on paper but aren't a great ﬁt.</div><a class="landing-article__more">Learn more</a>
+                        </div>
+                      </div>
+                      <div class="landing-article__box">
+                        <div class="landing-article__box-side">
+                          <figure class="landing-article__figure landing-article__figure_right"><img class="landing-article__img" src="images/image-7.png" alt="image"/></figure>
+                        </div>
+                        <div class="landing-article__box-side">
+                          <div class="landing-article__text-gray">With Teamwork Pro</div>
+                          <div class="landing-article__text-blue">Use ready-made proﬁles to see whether someone has the experience and the right soft skills.</div>
+                          <div class="landing-article__text-gray">Without</div>
+                          <div class="landing-article__text-black">Lose time hiring the wrong peope, experience increased churn.</div><a class="landing-article__more">Learn more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="langing-box langing-box_gray text-center">
+                  <div class="container">
+                    <h2 class="langing-title">Get Culture Fit Today with Teamwork Pro</h2>
+                    <button class="langing-btn">Show Me How</button>
+                  </div>
+                </section>
+              </article>
+            </main>
+          </div>
+        </div>
+        <footer class="footer-wrapper">
+          <div class="main-footer">
+            <div class="container">
+              <div class="row">
+                <div class="gc-col-1 col-xs-6 col-md-3">
+                  <div class="theme-widget _footer widget_text_icl" id="text_icl-6">
+                    <div class="textwidget"><span class="logo"></span>
+                      <div class="socials"><a class="fa fa-facebook-square" href="https://www.facebook.com/thegoodco" target="_blank"></a><a class="fa fa-linkedin-square" href="https://www.linkedin.com/company/good.co" target="_blank"></a><a class="fa fa-twitter-square" href="https://twitter.com/ingoodco" target="_blank"></a><a class="fa fa-instagram" href="http://instagram.com/goodcoapp" target="_blank"></a><a class="fa fa-angellist" href="https://angel.co/good-co" target="_blank"></a></div>
+                      <div class="subscribe">
+                        <h5>Stay Informed!</h5>
+                        <p>Sign up for our newsletter</p>
+                        <div class="wpcf7" id="wpcf7-f1609-o1" role="form" lang="en-US" dir="ltr">
+                          <div class="screen-reader-response"></div>
+                          <form class="wpcf7-form" action="/#wpcf7-f1609-o1" method="post" novalidate="novalidate">
+                            <div style="display: none;">
+                              <input type="hidden" name="_wpcf7" value="1609"/>
+                              <input type="hidden" name="_wpcf7_version" value="5.0.3"/>
+                              <input type="hidden" name="_wpcf7_locale" value="en_US"/>
+                              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1609-o1"/>
+                              <input type="hidden" name="_wpcf7_container_post" value="0"/>
+                            </div>
+                            <label class="has-float-label"><span class="wpcf7-form-control-wrap email">
+                                <input class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" name="email" value="" size="00" minlength="1" aria-required="true" aria-invalid="false"/></span><span class="floated">Your email</span></label>
+                            <button type="submit">Submit</button>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gc-col-5 col-xs-6 col-md-3">
+                  <div class="theme-widget _footer widget_text_icl" id="text_icl-7">
+                    <div class="textwidget">
+                      <h4>Get our Mobile Apps!</h4>
+                      <p><strong>Workplace Happiness</strong><br/>Take fun quizzes and discover your strengths.</p><a class="footer-5" target="_blank" href="https://itunes.apple.com/us/app/good.co-match-your-personality/id892559034?utm_source=web&amp;utm_medium=web&amp;utm_campaign=App%20Store%20From%20Web"><img src="https://good.co/wp-content/uploads/2017/03/app-store.png" alt="Workplace Happiness iOS"/></a><a class="footer-5" target="_blank" href="https://play.google.com/store/apps/details?id=co.good.android&amp;referrer=utm_source%3Dgood.co%26utm_medium%3Dstore%2520button%26utm_content%3Dsite%2520footer"><img src="https://good.co/wp-content/uploads/2017/03/play-store.png" alt="Workplace Happiness Android"/></a>
+                      <p><strong>Teamwork</strong><br/>Discover how you works with teams.</p><a class="footer-5" target="_blank" href="https://itunes.apple.com/app/id1342229093?mt=8"><img src="https://good.co/wp-content/uploads/2017/03/app-store.png" alt="Teamwork iOS"/></a><a class="footer-5" target="_blank" href="https://play.google.com/store/apps/details?id=co.good.teamwork.android"><img src="https://good.co/wp-content/uploads/2017/03/play-store.png" alt="Teamwork Android"/></a>
+                      <div class="subscribe">
+                        <h5>Stay Informed!</h5>
+                        <p>Sign up for our newsletter</p>
+                        <div class="wpcf7" id="wpcf7-f1609-o2" role="form" lang="en-US" dir="ltr">
+                          <div class="screen-reader-response"></div>
+                          <form class="wpcf7-form" action="/#wpcf7-f1609-o2" method="post" novalidate="novalidate">
+                            <div style="display: none;">
+                              <input type="hidden" name="_wpcf7" value="1609"/>
+                              <input type="hidden" name="_wpcf7_version" value="5.0.3"/>
+                              <input type="hidden" name="_wpcf7_locale" value="en_US"/>
+                              <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1609-o2"/>
+                              <input type="hidden" name="_wpcf7_container_post" value="0"/>
+                            </div>
+                            <label class="has-float-label"><span class="wpcf7-form-control-wrap email">
+                                <input class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" type="email" name="email" value="" size="00" minlength="1" aria-required="true" aria-invalid="false"/></span><span class="floated">Your email</span></label>
+                            <button type="submit">Submit</button>
+                            <div class="wpcf7-response-output wpcf7-display-none"></div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="gc-col-2 col-xs-4 col-md-2">
+                  <div class="theme-widget _footer widget_nav_menu" id="nav_menu-3">
+                    <div class="menu-footer1-container">
+                      <ul class="menu" id="menu-footer1">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5889" id="menu-item-5889"><a href="#" itemprop="url">Products</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5891" id="menu-item-5891"><a target="_blank" href="https://app.adjust.com/5dlf1u?campaign=Corporate_site&amp;adgroup=Aboutus_learnmore_CTA" itemprop="url">Workplace Happiness</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6443" id="menu-item-6443"><a href="https://good.co/teamworkpro/" itemprop="url">Teamwork Pro</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5893" id="menu-item-5893"><a href="#" itemprop="url">Our Science</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5917" id="menu-item-5917"><a href="https://good.co/our-science/background/" itemprop="url">Background</a></li>
+                            <li class="menu-item menu-item-type-post_type_archive menu-item-object-personas menu-item-6445" id="menu-item-6445"><a href="https://good.co/personas/" itemprop="url">People Personas</a></li>
+                            <li class="menu-item menu-item-type-post_type_archive menu-item-object-company-personas menu-item-6444" id="menu-item-6444"><a href="https://good.co/company-personas/" itemprop="url">Company Personas</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5897" id="menu-item-5897"><a href="#" itemprop="url">Insights</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5978" id="menu-item-5978"><a target="_blank" href="/companies/" itemprop="url">Company Profiles</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="gc-col-3 col-xs-4 col-md-2">
+                  <div class="theme-widget _footer widget_nav_menu" id="nav_menu-4">
+                    <div class="menu-footer2-container">
+                      <ul class="menu" id="menu-footer2">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-30" id="menu-item-30"><a target="_blank" href="https://good.co/blog/" itemprop="url">Blog</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5899" id="menu-item-5899"><a target="_blank" href="https://good.co/category/career/" itemprop="url">Career</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5901" id="menu-item-5901"><a target="_blank" href="https://good.co/category/career_advice/" itemprop="url">Career Advice</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5903" id="menu-item-5903"><a target="_blank" href="https://good.co/category/company_culture/" itemprop="url">Company Culture</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5900" id="menu-item-5900"><a target="_blank" href="https://good.co/category/goodco/" itemprop="url">Good&amp;Co</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5904" id="menu-item-5904"><a target="_blank" href="https://good.co/category/pr/" itemprop="url">Press Release</a></li>
+                            <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-5902" id="menu-item-5902"><a target="_blank" href="https://good.co/category/psychometrics/" itemprop="url">Psychometrics</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="gc-col-4 col-xs-4 col-md-2">
+                  <div class="theme-widget _footer widget_nav_menu" id="nav_menu-5">
+                    <div class="menu-footer3-container">
+                      <ul class="menu" id="menu-footer3">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5906" id="menu-item-5906"><a href="#" itemprop="url">About</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5905" id="menu-item-5905"><a href="https://good.co/about-us/" itemprop="url">About Us</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5911" id="menu-item-5911"><a href="/team" itemprop="url">Our Team</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5910" id="menu-item-5910"><a href="https://good.co/press/" itemprop="url">Press</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-33" id="menu-item-33"><a href="https://faq.good.co" itemprop="url">FAQ</a></li>
+                            <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5975" id="menu-item-5975"><a target="_blank" href="http://angel.co/good-co/jobs" itemprop="url">Careers at Good&amp;Co</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-713" id="menu-item-713"><a href="https://good.co/contact/" itemprop="url">Contact</a></li>
+                          </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5907" id="menu-item-5907"><a href="#" itemprop="url">Extras</a>
+                          <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5908" id="menu-item-5908"><a href="https://good.co/company-insider/" itemprop="url">Quora Company Insider</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1167" id="menu-item-1167"><a href="https://good.co/partner-sites/" itemprop="url">Partner Sites</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1168" id="menu-item-1168"><a href="https://good.co/privacy-policy/" itemprop="url">Privacy</a></li>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1169" id="menu-item-1169"><a href="https://good.co/terms-conditions/" itemprop="url">Terms and Conditions</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
     </div>
     <!-- build:js scripts/vendor.js-->
     <!-- endbuild-->
