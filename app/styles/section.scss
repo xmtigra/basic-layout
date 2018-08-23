@@ -48,7 +48,6 @@
   font-size: 16px;
   color: #ffffff;
   font-weight: bold;
-  white-space: pre;
   padding: 12px 22px;
   line-height: normal;
   border-radius: 80px;
@@ -757,10 +756,6 @@
         height: 3px;
       }
     }
-    // &__title {
-    // }
-    // &__sub-title {
-    // }
     &-flex {
       width: 1300px;
       &__item {
