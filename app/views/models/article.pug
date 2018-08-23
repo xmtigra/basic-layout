@@ -1,14 +1,40 @@
-article
-  //- section.langing-box.langing-box_gray.langing-box_fixed
-  //-   .container
-  //-     span test
-  //- section
-  //-   .container
-  //-     span test
-  //-     img(src="images/image-0.png" alt="image-0")
-  //-     img(src="images/image-1.png" alt="image-1")
+article.langing-wrapper
+  section.langing-box.langing-box_gray.langing-box_fixed
+    .container.landing-container
+      .langing-header
+        .langing-header__side.langing-header__side_left
+          .langing-header__title Teamwork Pro
+        .langing-header__side.langing-header__side_middle
+          .langing-nav
+            a.langing-nav__item(href="#teamwork") Teamwork
+            a.langing-nav__item(href="#recruit") Recruit
+        .langing-header__side.langing-header__side_right
+          a.langing-btn.langing-header__button(href="/my-team/trial-registration") Get Started
+  section.langing-hero
+    .langing-hero__info Why Teamwork Pro?
+    h1.langing-hero__title Understand Team Dynamics.
+    h2.langing-hero__sub-title Optimize engagement. Improve performance.
+    .langing-hero-flex
+      .langing-hero-flex__item.langing-hero-flex__item_reverse
+        .langing-hero-flex__box
+          a.langing-btn.langing-btn_size_l.langing-hero__button(href="/my-team/trial-registration") Learn More
+        .langing-hero-flex__box
+          figure.langing-hero__figure
+            img.langing-hero__img(src="images/image-0.png" alt="image-0")
+      .langing-hero-flex__item.langing-hero-flex__item_align-items_start
+        .langing-hero-flex__box
+          .langing-hero__text Keep a constant pulse on what’s going on in your teams, gain insight into potential issues, and help people work better together.
+          .langing-hero__more-box
+            a.langing-hero__more-link Learn More
+            span.langing-hero__more-text About Teamwork Pro
+        .langing-hero-flex__box
+          figure.langing-hero__figure.langing-hero__figure_clear
+            img.langing-hero__img(src="images/image-1.png" alt="image-1")
+            a.langing-hero__play(data-toggle="modal", data-target="#videoModal" )
+              .langing-hero__play-btn
+              .langing-hero__play-text Watch now
   section.langing-box.langing-box_gray
-    .container
+    .container.landing-container
       .landing-logos
         .landing-logos__item
           img.landing-logos__img(src="images/coca.png" alt="coca")
@@ -18,8 +44,8 @@ article
           img.landing-logos__img(src="images/axel.png" alt="axel")
         .landing-logos__item
           img.landing-logos__img(src="images/stepstone.png" alt="stepstone")
-  section.langing-box
-    .container
+  section.langing-box#teamwork
+    .container.landing-container
        .landing-article
         .landing-article__title TEAMWORK
         .landing-article__description Understand team dynamics, and optimize engagement and performance.
@@ -44,12 +70,12 @@ article
             .landing-article__text-black Productivity will remain low and you might lose unhappy employees due to conﬂict.
             a.landing-article__more Learn more
   section.langing-box.langing-box_gray
-    .container
+    .container.landing-container
       .landing-quote
         .landing-quote__text “Job seekers need more insight than the often opaque information provided in a job description or company proﬁle. Good&Co provides the transparency needed on both sides that enables better culture ﬁt for both candidates and companies.”
         .landing-quote__author ― Tim Proehm, Senior Director, RPO Center of Excellence at Kelly Outsourcing and Consulting Group
-  section.langing-box
-    .container
+  section.langing-box#recruit
+    .container.landing-container
       .landing-article
         .landing-article__title RECRUIT
         .landing-article__description Make better decisions, replicate them, and speed up time to hire.
@@ -74,6 +100,6 @@ article
             .landing-article__text-black Lose time hiring the wrong peope, experience increased churn.
             a.landing-article__more Learn more
   section.langing-box.langing-box_gray.text-center
-    .container
+    .container.landing-container
       h2.langing-title Get Culture Fit Today with Teamwork Pro
-      button.langing-btn Show Me How
+      a.langing-btn.langing-btn_size_m(href="/my-team/trial-registration") Show Me How
