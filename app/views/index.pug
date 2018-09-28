@@ -1,16 +1,139 @@
 extends includes/layout.pug
 
 block content
-  .container
-    .header
-      ul.nav.nav-pills.float-right
-        li.nav-item
-          a.nav-link.active(href='/index.html') Home
-        li
-          a.nav-link(href='about.html') About
-        li
-          a.nav-link(href='contact.html') Contact
-      h3.text-muted basic layout
-    include includes/jumbotron.pug
-    include includes/footer.pug
+  .nb-test__branding(style="url('../images/partner-bg.jpg') center top no-repeat;")
+    //- (style="../images/partner-bg.jpg;")
+    .nb-test__branding-conainer
+      #page.hfeed.site
+        include includes/mobilenav.pug
+        include includes/header.pug
+        section.nb-test.nb-test_center.nb-test_gray
+          .nb-test__container
+            .nb-test__sub-test тест
+            .nb-test__title Не слишком ли сильно вы упоролись по бегу?
+            .nb-test__question 12 вопросов
+            figure.nb-test__figure
+              img(src="./images/rocky.png", alt="app")
+            .nb-test__p Если на каждой тренировке вы думаете, что можете стать быстрее, лучше, сильнее (но для этого нужно лишь чуть больше потрениро-ваться) — пройдите наш несерьезный тест.
+            a.nb-test__btn(href="#", title="НАЧНЕМ ТЕСТ!") НАЧНЕМ ТЕСТ!
+        section.nb-test.nb-test_center.nb-test_gray
+          .nb-test__container
+            .nb-test__sub-test тест
+            .nb-test__second-title Не слишком ли сильно вы упоролись по бегу?
+            .nb-test__question 2 из 12
+            .nb-test__question-title Сколько километров вы набегаете за неделю?
 
+            .nb-test__variant-box
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="v1" name="v")
+                label.nb-test__label(for="v1") 15–25 км
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="v2" name="v" checked)
+                label.nb-test__label(for="v2") 30–40 км
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="v3" name="v")
+                label.nb-test__label(for="v3") 50–60 км
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="v4" name="v")
+                label.nb-test__label(for="v4") Более 60 км
+            a.nb-test__btn(href="#", title="ВПЕРЕД")
+              span ВПЕРЕД
+              i.nb-test__arrow-right
+        section.nb-test.nb-test_center.nb-test_gray
+          .nb-test__container
+            .nb-test__sub-test тест
+            .nb-test__second-title Не слишком ли сильно вы упоролись по бегу?
+            .nb-test__question 2 из 12
+            .nb-test__question-title Окей, теперь посложнее. Свой первый полумарафон вы пробежали:
+            .nb-test__variant-box
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="t1" name="t")
+                label.nb-test__label(for="t1") Почти без подготовки, с ОРВИ и в старых кедах
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="t2" name="t" checked)
+                label.nb-test__label.nb-test__label_red(for="t2") Готовился пару месяцев: записался в беговой клуб, прикупил новые кроссовки
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="t3" name="t")
+                label.nb-test__label(for="t3") Готовился сам: Нашел в интернете программу подготовки и старался ее придерживаться
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="t4" name="t")
+                label.nb-test__label.nb-test__label_green(for="t4") После редких тренировок на стадионе и беговой дорожки
+            a.nb-test__btn(href="#", title="ВПЕРЕД")
+              span ВПЕРЕД
+              i.nb-test__arrow-right
+        section.nb-test.nb-test_center.nb-test_gray
+          .nb-test__container
+            .nb-test__sub-test тест
+            .nb-test__second-title Не слишком ли сильно вы упоролись по бегу?
+            .nb-test__question 3 из 12
+            .nb-test__question-title Вы готовитесь к марафону и четко следуете тренировочному плану. И вдруг в фейсбучике видите, что кто-то бесплатно отдает свою регистрацию на половинку за неделю до вашего марафона. Вы:
+            .nb-test__variant-box
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="y1" name="y")
+                label.nb-test__label.nb-test__label_red(for="y1") Конечно побегу! Постараюсь не рвать на дистанции и обойтись без личников, но кто знает:)
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="y2" name="y")
+                label.nb-test__label.nb-test__label_green(for="y2") Если это не вписывается в тренировочный план, не побегу.
+                  .nb-test__info А вот не стоит так перенапрягаться. Лучше сделайте репост в фейсбучике, а потом на диванчике полежите, рульку скушайте, и на телевизоре посмотрите, как другие бегут.
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="y3" name="y" checked)
+                label.nb-test__label(for="y3") ААААА!!!11 Регистрация на шару! Пакую рюкзак!
+              .nb-test__variant
+                input.nb-test__radio(type="radio" id="y4" name="y")
+                label.nb-test__label(for="y4") Я уже жалею, что на марафон зарегался, а тут еще и это!
+            a.nb-test__btn(href="#", title="ВПЕРЕД")
+              span ВПЕРЕД
+              i.nb-test__arrow-right
+        section.nb-test.nb-test_center.nb-test_gray
+          .nb-test__container
+            .nb-test__sub-test тест
+            .nb-test__second-title Не слишком ли сильно вы упоролись по бегу?
+            .nb-test__question 4 из 12
+            .nb-test__question-title После особенно интенсивных тренировок у вас начало болеть колено. Иногда оно болит в самый неподхо-дящий момент, а потом неделями не беспокоит. Что будете делать?
+            .nb-test__variant-box
+              .nb-test__variant
+                input.nb-test__checkbox(type="checkbox" id="w1" name="w" checked)
+                label.nb-test__label(for="w1") «Плевать, вальсируем», думаете вы и продолжаете тренироваться
+              .nb-test__variant
+                input.nb-test__checkbox(type="checkbox" id="w2" name="w")
+                label.nb-test__label(for="w2") Читаете форумы, спрашиваете знакомых бегунов и начинаете пить хондропротекторы
+              .nb-test__variant
+                input.nb-test__checkbox(type="checkbox" id="w3" name="w" checked)
+                label.nb-test__label(for="w3") Идете к тренеру, — может, пора чуть подкорректировать нагрузку?
+              .nb-test__variant
+                input.nb-test__checkbox(type="checkbox" id="w4" name="w")
+                label.nb-test__label(for="w4") Прекращаете бегать — вдруг это что-то серьезное?
+            a.nb-test__btn(href="#", title="ВПЕРЕД")
+              span ВПЕРЕД
+              i.nb-test__arrow-right
+        section.nb-test.nb-test_center.nb-test_gray
+          .nb-test__container
+            img.nb-test__partner-label(src="../images/partner-label.png", alt="")
+            .nb-test__second-title Не слишком ли сильно вы упоролись по бегу?
+            .nb-test__question Результат
+            .nb-test__title.nb-test__title_green Вы — нормальный пацан!
+            figure.nb-test__figure
+              img(src="./images/rocky-finish.png", alt="rocky-finish")
+            .nb-test__p.nb-test__p_left
+              | Вы идеально нормальный бегун, который познал беговой дзен. <br>
+              | Экзистенциальные вопросы вроде бега с пятки или носка, Garmin или Suunto, трейл или шоссе вас больше не волнуют. <br>
+              | Так недолго и тренером стать!
+
+            .nb-test__question Расскажите друзьям!
+
+
+            .nb-test__social
+              .nb-test__social-item.nb-test__social-item_fb
+                i.nb-test__icon-fb
+                span Поделиться
+              .nb-test__social-item.nb-test__social-item_tw
+                i.nb-test__icon-tw
+                span Чирикнуть
+              .nb-test__social-item.nb-test__social-item_te
+                i.nb-test__icon-te
+                span Телеграфировать
+
+            a.nb-test__btn(href="#", title="ХОЧУ ПРОЙТИ ТЕСТ ЕЩЕ РАЗ")
+              i.nb-test__reload
+              | ХОЧУ ПРОЙТИ ТЕСТ ЕЩЕ РАЗ
+  include includes/footer.pug

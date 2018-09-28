@@ -20,24 +20,284 @@
       a(href='http://browsehappy.com/') upgrade your browser
       |  to improve your experience.
     -->
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills float-right">
-          <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
-          <li><a class="nav-link" href="about.html">About</a></li>
-          <li><a class="nav-link" href="contact.html">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">basic layout</h3>
-      </div>
-      <div class="jumbotron">
-        <h1 class="display-3">'Allo, 'Allo!</h1>
-        <p class="lead">Contact page</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid!</a></p>
-      </div>
-      <div class="footer">
-        <p>© Andriy Pyvovarchuk</p>
+    <div class="nb-test__branding" style="url('../images/partner-bg.jpg') center top no-repeat;">
+      <div class="nb-test__branding-conainer">
+        <div class="hfeed site" id="page">
+          <div class="mobile-nav">
+            <form class="searchform mobile" role="search" method="get" action="https://nogibogi.com/" autocomplete="off">
+              <fieldset><i class="icon icon-search"></i>
+                <label class="visually-hidden" for="search-form-5baa2cc0ecb9f">Search</label>
+                <input class="search-field" id="search-form-5baa2cc0ecb9f" type="text" placeholder="Поиск" value="" name="s" autocomplete="off"/><a class="close-search" href="#">✕</a>
+              </fieldset>
+            </form>
+            <ul>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('shoes') }"><a href="category/shoes">Обувь</a></li>
+              <li class="cat-color cat-turquoise" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('health') }"><a href="category/health">Здоровье</a></li>
+              <li class="cat-color cat-scarlet" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('question') }"><a href="category/question">Есть вопрос</a></li>
+              <li class="cat-color cat-laurel" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('trailrunning') }"><a href="category/trailrunning">Трейлраннинг</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('300-days') }"><a href="category/300-days">300 дней</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('muzyka-dlya-bega') }"><a href="category/muzyka-dlya-bega">Музыка для бега</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('na-pulse') }"><a href="category/na-pulse">На пульсе</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('kyivtrails') }"><a href="category/kyivtrails">Трейловые места Киева</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('running-school') }"><a href="category/running-school">Школа бега</a></li>
+              <li class="cat-color cat-azure" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('beginners') }"><a href="category/beginners">Начинающим</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('werunkiev') }"><a href="category/werunkiev">Беговые места Киева</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('outfit') }"><a href="category/outfit">Одежда</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('cycling') }"><a href="category/cycling">Велоспорт</a></li>
+              <li class="cat-color cat-azure" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('running-books') }"><a href="category/running-books">Книги</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('gadgets') }"><a href="category/gadgets">Гаджеты</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('runners-stories') }"><a href="category/runners-stories">Истории</a></li>
+              <li class="cat-color cat-red" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('training') }"><a href="category/training">Тренировки</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('places') }"><a href="category/places">Места</a></li>
+              <li class="cat-color cat-turquoise" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('motivation') }"><a href="category/motivation">Мотивация</a></li>
+              <li class="cat-color cat-scarlet" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('nutrition') }"><a href="category/nutrition">Питание</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('interview') }"><a href="category/interview">Интервью</a></li>
+              <li class="cat-color cat-grey" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('equipment') }"><a href="category/equipment">Экипировка</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('reports') }"><a href="category/reports">Отчёты о соревнованиях</a></li>
+              <li class="cat-color cat-laurel" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('triathlon') }"><a href="category/triathlon">Триатлон</a></li>
+              <li class="cat-color cat-pink" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('womens-running') }"><a href="category/womens-running">Женщинам</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('race-calendar') }"><a href="category/race-calendar">Календарь</a></li>
+              <li class="cat-color cat-green" data-ui-sref-active="active" data-ng-class="{ 'active' : isCurrentCat('columns') }"><a href="category/columns">Колонки</a></li>
+            </ul>
+          </div>
+          <div class="site-header" id="header" role="banner">
+            <div class="container header-container site-header-top">
+              <div class="header-icons">
+                <ul>
+                  <li><a target="_blank" href="https://www.facebook.com/nogibogicomua" rel="noopener" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+                  <li><a target="_blank" href="https://t.me/nogibogi" rel="noopener" title="Telegram"><i class="icon icon-telegram"></i></a></li>
+                  <li><a target="_blank" href="https://www.youtube.com/channel/UCIiYj0ItF02n3Ftbf3rSwbw" rel="noopener" title="Youtube"><i class="icon icon-youtube"></i></a></li>
+                </ul>
+              </div><a id="logo" href="https://nogibogi.com" rel="home">Ногибоги. Для всех, кто любит бег</a>
+              <form class="searchform mobile" role="search" method="get" action="https://nogibogi.com/" autocomplete="off">
+                <fieldset><i class="icon icon-search"></i>
+                  <label class="visually-hidden" for="search-form-5baa2cc10082a">Search</label>
+                  <input class="search-field" id="search-form-5baa2cc10082a" type="text" placeholder="Поиск" value="" name="s" autocomplete="off"/><a class="close-search" href="#">✕</a>
+                </fieldset>
+              </form>
+            </div>
+            <div class="header-navigation" id="head-nav">
+              <div class="container">
+                <div class="header-nav-holder">
+                  <div class="header-nav-box">
+                    <div class="nav-block">
+                      <div id="nav">
+                        <button class="nav-trigger" id="nav-trigger" aria-hidden="true"><span></span></button><a class="logo text_size_0" href="https://nogibogi.com/" rel="home">Ногибоги. Для всех, кто любит бег</a>
+                        <ul>
+                          <li class="cat-color cat-grey active"><a href="https://nogibogi.com/">Главная</a></li>
+                          <li class="cat-color cat-azure"><a href="category/beginners">Начинающим</a></li>
+                          <li class="cat-color cat-red"><a href="category/training">Тренировки</a></li>
+                          <li class="cat-color cat-turquoise"><a href="category/motivation">Мотивация</a></li>
+                          <li class="cat-color cat-scarlet"><a href="category/nutrition">Питание</a></li>
+                          <li class="cat-color cat-grey"><a href="category/equipment">Экипировка</a></li>
+                          <li class="cat-color cat-pink"><a href="category/womens-running">Женщинам</a></li>
+                          <li class="cat-color cat-green"><a href="category/race-calendar">Календарь</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #site-navigation-->
+            <!-- #masthead-->
+          </div>
+          <section class="nb-test nb-test_center nb-test_gray">
+            <div class="nb-test__container">
+              <div class="nb-test__sub-test">тест</div>
+              <div class="nb-test__title">Не слишком ли сильно вы упоролись по бегу?</div>
+              <div class="nb-test__question">12 вопросов</div>
+              <figure class="nb-test__figure"><img src="./images/rocky.png" alt="app"/></figure>
+              <div class="nb-test__p">Если на каждой тренировке вы думаете, что можете стать быстрее, лучше, сильнее (но для этого нужно лишь чуть больше потрениро-ваться) — пройдите наш несерьезный тест.</div><a class="nb-test__btn" href="#" title="НАЧНЕМ ТЕСТ!">НАЧНЕМ ТЕСТ!</a>
+            </div>
+          </section>
+          <section class="nb-test nb-test_center nb-test_gray">
+            <div class="nb-test__container">
+              <div class="nb-test__sub-test">тест</div>
+              <div class="nb-test__second-title">Не слишком ли сильно вы упоролись по бегу?</div>
+              <div class="nb-test__question">2 из 12</div>
+              <div class="nb-test__question-title">Сколько километров вы набегаете за неделю?</div>
+              <div class="nb-test__variant-box">
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="v1" name="v"/>
+                  <label class="nb-test__label" for="v1">15–25 км</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="v2" name="v" checked="checked"/>
+                  <label class="nb-test__label" for="v2">30–40 км</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="v3" name="v"/>
+                  <label class="nb-test__label" for="v3">50–60 км</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="v4" name="v"/>
+                  <label class="nb-test__label" for="v4">Более 60 км</label>
+                </div>
+              </div><a class="nb-test__btn" href="#" title="ВПЕРЕД"><span>ВПЕРЕД</span><i class="nb-test__arrow-right"></i></a>
+            </div>
+          </section>
+          <section class="nb-test nb-test_center nb-test_gray">
+            <div class="nb-test__container">
+              <div class="nb-test__sub-test">тест</div>
+              <div class="nb-test__second-title">Не слишком ли сильно вы упоролись по бегу?</div>
+              <div class="nb-test__question">2 из 12</div>
+              <div class="nb-test__question-title">Окей, теперь посложнее. Свой первый полумарафон вы пробежали:</div>
+              <div class="nb-test__variant-box">
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="t1" name="t"/>
+                  <label class="nb-test__label" for="t1">Почти без подготовки, с ОРВИ и в старых кедах</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="t2" name="t" checked="checked"/>
+                  <label class="nb-test__label nb-test__label_red" for="t2">Готовился пару месяцев: записался в беговой клуб, прикупил новые кроссовки</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="t3" name="t"/>
+                  <label class="nb-test__label" for="t3">Готовился сам: Нашел в интернете программу подготовки и старался ее придерживаться</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="t4" name="t"/>
+                  <label class="nb-test__label nb-test__label_green" for="t4">После редких тренировок на стадионе и беговой дорожки</label>
+                </div>
+              </div><a class="nb-test__btn" href="#" title="ВПЕРЕД"><span>ВПЕРЕД</span><i class="nb-test__arrow-right"></i></a>
+            </div>
+          </section>
+          <section class="nb-test nb-test_center nb-test_gray">
+            <div class="nb-test__container">
+              <div class="nb-test__sub-test">тест</div>
+              <div class="nb-test__second-title">Не слишком ли сильно вы упоролись по бегу?</div>
+              <div class="nb-test__question">3 из 12</div>
+              <div class="nb-test__question-title">Вы готовитесь к марафону и четко следуете тренировочному плану. И вдруг в фейсбучике видите, что кто-то бесплатно отдает свою регистрацию на половинку за неделю до вашего марафона. Вы:</div>
+              <div class="nb-test__variant-box">
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="y1" name="y"/>
+                  <label class="nb-test__label nb-test__label_red" for="y1">Конечно побегу! Постараюсь не рвать на дистанции и обойтись без личников, но кто знает:)</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="y2" name="y"/>
+                  <label class="nb-test__label nb-test__label_green" for="y2">Если это не вписывается в тренировочный план, не побегу.
+                    <div class="nb-test__info">А вот не стоит так перенапрягаться. Лучше сделайте репост в фейсбучике, а потом на диванчике полежите, рульку скушайте, и на телевизоре посмотрите, как другие бегут.</div>
+                  </label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="y3" name="y" checked="checked"/>
+                  <label class="nb-test__label" for="y3">ААААА!!!11 Регистрация на шару! Пакую рюкзак!</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__radio" type="radio" id="y4" name="y"/>
+                  <label class="nb-test__label" for="y4">Я уже жалею, что на марафон зарегался, а тут еще и это!</label>
+                </div>
+              </div><a class="nb-test__btn" href="#" title="ВПЕРЕД"><span>ВПЕРЕД</span><i class="nb-test__arrow-right"></i></a>
+            </div>
+          </section>
+          <section class="nb-test nb-test_center nb-test_gray">
+            <div class="nb-test__container">
+              <div class="nb-test__sub-test">тест</div>
+              <div class="nb-test__second-title">Не слишком ли сильно вы упоролись по бегу?</div>
+              <div class="nb-test__question">4 из 12</div>
+              <div class="nb-test__question-title">После особенно интенсивных тренировок у вас начало болеть колено. Иногда оно болит в самый неподхо-дящий момент, а потом неделями не беспокоит. Что будете делать?</div>
+              <div class="nb-test__variant-box">
+                <div class="nb-test__variant">
+                  <input class="nb-test__checkbox" type="checkbox" id="w1" name="w" checked="checked"/>
+                  <label class="nb-test__label" for="w1">«Плевать, вальсируем», думаете вы и продолжаете тренироваться</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__checkbox" type="checkbox" id="w2" name="w"/>
+                  <label class="nb-test__label" for="w2">Читаете форумы, спрашиваете знакомых бегунов и начинаете пить хондропротекторы</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__checkbox" type="checkbox" id="w3" name="w" checked="checked"/>
+                  <label class="nb-test__label" for="w3">Идете к тренеру, — может, пора чуть подкорректировать нагрузку?</label>
+                </div>
+                <div class="nb-test__variant">
+                  <input class="nb-test__checkbox" type="checkbox" id="w4" name="w"/>
+                  <label class="nb-test__label" for="w4">Прекращаете бегать — вдруг это что-то серьезное?</label>
+                </div>
+              </div><a class="nb-test__btn" href="#" title="ВПЕРЕД"><span>ВПЕРЕД</span><i class="nb-test__arrow-right"></i></a>
+            </div>
+          </section>
+          <section class="nb-test nb-test_center nb-test_gray">
+            <div class="nb-test__container"><img class="nb-test__partner-label" src="../images/partner-label.png" alt=""/>
+              <div class="nb-test__second-title">Не слишком ли сильно вы упоролись по бегу?</div>
+              <div class="nb-test__question">Результат</div>
+              <div class="nb-test__title nb-test__title_green">Вы — нормальный пацан!</div>
+              <figure class="nb-test__figure"><img src="./images/rocky-finish.png" alt="rocky-finish"/></figure>
+              <div class="nb-test__p nb-test__p_left">
+                Вы идеально нормальный бегун, который познал беговой дзен. <br>
+                Экзистенциальные вопросы вроде бега с пятки или носка, Garmin или Suunto, трейл или шоссе вас больше не волнуют. <br>
+                Так недолго и тренером стать!
+              </div>
+              <div class="nb-test__question">Расскажите друзьям!</div>
+              <div class="nb-test__social">
+                <div class="nb-test__social-item nb-test__social-item_fb"><i class="nb-test__icon-fb"></i><span>Поделиться</span></div>
+                <div class="nb-test__social-item nb-test__social-item_tw"><i class="nb-test__icon-tw"></i><span>Чирикнуть</span></div>
+                <div class="nb-test__social-item nb-test__social-item_te"><i class="nb-test__icon-te"></i><span>Телеграфировать</span></div>
+              </div><a class="nb-test__btn" href="#" title="ХОЧУ ПРОЙТИ ТЕСТ ЕЩЕ РАЗ"><i class="nb-test__reload"></i>ХОЧУ ПРОЙТИ ТЕСТ ЕЩЕ РАЗ</a>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
+    <footer class="site-footer full-block mobile" id="footer">
+      <div class="container">
+        <div class="footer-cols">
+          <div class="footer-col footer-col-1">
+            <div class="footer-heading">Рубрики</div>
+            <ul class="footer-nav">
+              <li><a href="https://nogibogi.com/category/shoes">Обувь</a></li>
+              <li><a href="https://nogibogi.com/category/health">Здоровье</a></li>
+              <li><a href="https://nogibogi.com/category/question">Есть вопрос</a></li>
+              <li><a href="https://nogibogi.com/category/trailrunning">Трейлраннинг</a></li>
+              <li><a href="https://nogibogi.com/category/300-days">300 дней</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col-2">
+            <ul class="footer-nav">
+              <li><a href="https://nogibogi.com/category/muzyka-dlya-bega">Музыка для бега</a></li>
+              <li><a href="https://nogibogi.com/category/na-pulse">На пульсе</a></li>
+              <li><a href="https://nogibogi.com/category/kyivtrails">Трейловые места Киева</a></li>
+              <li><a href="https://nogibogi.com/category/running-school">Школа бега</a></li>
+              <li><a href="https://nogibogi.com/category/beginners">Начинающим</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col-3">
+            <ul class="footer-nav">
+              <li><a href="https://nogibogi.com/category/werunkiev">Беговые места Киева</a></li>
+              <li><a href="https://nogibogi.com/category/outfit">Одежда</a></li>
+              <li><a href="https://nogibogi.com/category/cycling">Велоспорт</a></li>
+              <li><a href="https://nogibogi.com/category/running-books">Книги</a></li>
+              <li><a href="https://nogibogi.com/category/gadgets">Гаджеты</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col-4">
+            <ul class="footer-nav">
+              <li><a href="https://nogibogi.com/category/runners-stories">Истории</a></li>
+              <li><a href="https://nogibogi.com/category/training">Тренировки</a></li>
+              <li><a href="https://nogibogi.com/category/places">Места</a></li>
+              <li><a href="https://nogibogi.com/category/motivation">Мотивация</a></li>
+              <li><a href="https://nogibogi.com/category/nutrition">Питание</a></li>
+            </ul>
+          </div>
+          <div class="footer-col footer-col-5">
+            <div class="footer-heading">О проекте</div>
+            <ul class="footer-nav">
+              <li><a href="https://nogibogi.com/about">О проекте</a></li>
+              <li><a href="mailto:editors@nogibogi.com">Напишите нам</a></li>
+            </ul>
+            <div class="footer-heading footer-heading-social">Соцсети</div>
+            <ul class="footer-nav footer-socials">
+              <li><a target="_blank" href="https://www.facebook.com/nogibogicomua" rel="noopener"><i class="icon icon-facebook"></i></a></li>
+              <li><a target="_blank" href="http://vk.com/nogibogi" rel="noopener"><i class="icon icon-vk"></i></a></li>
+              <li><a target="_blank" href="https://www.youtube.com/channel/UCIiYj0ItF02n3Ftbf3rSwbw" rel="noopener" title="Youtube"><i class="icon icon-youtube"></i></a></li>
+              <li><a target="_blank" href="https://t.me/nogibogi" rel="noopener" title="Telegram"><i class="icon icon-telegram"></i></a></li>
+              <li><a target="_blank" href="https://www.strava.com/clubs/nogibogi" rel="noopener" title="Strava"><i class="icon icon-strava"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-copyrights"><a class="footer-logo" href="https://nogibogi.com">Ногибоги</a>Ногибоги — это онлайн-журнал о беге, здоровом образе жизни и всём, что с этим связано.</div>
+      </div>
+    </footer>
     <!-- build:js scripts/vendor.js-->
     <!-- endbuild-->
     <!-- build:js scripts/plugins.js-->

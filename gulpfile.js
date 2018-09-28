@@ -11,7 +11,7 @@ const reload = browserSync.reload;
 let dev = true;
 
 gulp.task('styles', () => {
-  return gulp.src('app/styles/*.scss')
+  return gulp.src('app/styles/*.sass')
     .pipe($.plumber())
     .pipe($.if(dev, $.sourcemaps.init()))
     .pipe($.sass.sync({
@@ -19,10 +19,14 @@ gulp.task('styles', () => {
       precision: 10,
       includePaths: ['.']
     }).on('error', $.sass.logError))
-    .pipe($.autoprefixer({ browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'] }))
+    .pipe($.autoprefixer({
+      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
+    }))
     .pipe($.if(dev, $.sourcemaps.write()))
     .pipe(gulp.dest('.tmp/styles'))
-    .pipe(reload({ stream: true }));
+    .pipe(reload({
+      stream: true
+    }));
 });
 
 gulp.task('scripts', () => {
@@ -32,13 +36,20 @@ gulp.task('scripts', () => {
     .pipe($.babel())
     .pipe($.if(dev, $.sourcemaps.write('.')))
     .pipe(gulp.dest('.tmp/scripts'))
-    .pipe(reload({ stream: true }));
+    .pipe(reload({
+      stream: true
+    }));
 });
 
 function lint(files) {
   return gulp.src(files)
-    .pipe($.eslint({ fix: true }))
-    .pipe(reload({ stream: true, once: true }))
+    .pipe($.eslint({
+      fix: true
+    }))
+    .pipe(reload({
+      stream: true,
+      once: true
+    }))
     .pipe($.eslint.format())
     .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
 }
@@ -60,13 +71,26 @@ gulp.task('views', function buildHTML() {
 
 gulp.task('html', ['styles', 'scripts'], () => {
   return gulp.src('app/*.html')
-    .pipe($.useref({ searchPath: ['.tmp', 'app', '.'] }))
-    .pipe($.if(/\.js$/, $.uglify({ compress: { drop_console: true } })))
-    .pipe($.if(/\.css$/, $.cssnano({ safe: true, autoprefixer: false })))
+    .pipe($.useref({
+      searchPath: ['.tmp', 'app', '.']
+    }))
+    .pipe($.if(/\.js$/, $.uglify({
+      compress: {
+        drop_console: true
+      }
+    })))
+    .pipe($.if(/\.css$/, $.cssnano({
+      safe: true,
+      autoprefixer: false
+    })))
     .pipe($.if(/\.html$/, $.htmlmin({
-      collapseWhitespace: true,
+      collapseWhitespace: false,
       minifyCSS: true,
-      minifyJS: { compress: { drop_console: true } },
+      minifyJS: {
+        compress: {
+          drop_console: true
+        }
+      },
       processConditionalComments: true,
       removeComments: true,
       removeEmptyAttributes: true,
@@ -92,8 +116,8 @@ gulp.task('extras', () => {
     'app/*',
     '!app/*.html'
   ], {
-      dot: true
-    }).pipe(gulp.dest('dist'));
+    dot: true
+  }).pipe(gulp.dest('dist'));
 });
 
 gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
@@ -116,7 +140,7 @@ gulp.task('serve', () => {
       '.tmp/fonts/**/*'
     ]).on('change', reload);
 
-    gulp.watch('app/styles/**/*.scss', ['styles']);
+    gulp.watch('app/styles/**/*.sass', ['styles']);
     gulp.watch('app/scripts/**/*.js', ['scripts']);
     gulp.watch('app/fonts/**/*', ['fonts']);
   });
@@ -133,7 +157,10 @@ gulp.task('serve:dist', ['default'], () => {
 });
 
 gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
-  return gulp.src('dist/**/*').pipe($.size({ title: 'build', gzip: true }));
+  return gulp.src('dist/**/*').pipe($.size({
+    title: 'build',
+    gzip: true
+  }));
 });
 
 gulp.task('default', () => {

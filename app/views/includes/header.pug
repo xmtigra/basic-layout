@@ -1,0 +1,51 @@
+
+#header.site-header(role='banner')
+  .container.header-container.site-header-top
+    .header-icons
+      ul
+        li
+          a(target='_blank', href='https://www.facebook.com/nogibogicomua', rel='noopener', title='Facebook')
+            i.icon.icon-facebook
+        li
+          a(target='_blank', href='https://t.me/nogibogi', rel='noopener', title='Telegram')
+            i.icon.icon-telegram
+        li
+          a(target='_blank', href='https://www.youtube.com/channel/UCIiYj0ItF02n3Ftbf3rSwbw', rel='noopener', title='Youtube')
+            i.icon.icon-youtube
+    a#logo(href='https://nogibogi.com', rel='home')
+      | Ногибоги. Для всех, кто любит бег
+    form.searchform.mobile(role='search', method='get', action='https://nogibogi.com/', autocomplete='off')
+      fieldset
+        i.icon.icon-search
+        label.visually-hidden(for='search-form-5baa2cc10082a') Search
+        input#search-form-5baa2cc10082a.search-field(type='text', placeholder='Поиск', value='', name='s', autocomplete='off')
+        a.close-search(href='#') ✕
+  #head-nav.header-navigation
+    .container
+      .header-nav-holder
+        .header-nav-box
+          .nav-block
+            #nav
+              button#nav-trigger.nav-trigger(aria-hidden='true')
+                span
+              a.logo.text_size_0(href='https://nogibogi.com/', rel='home')
+                | Ногибоги. Для всех, кто любит бег
+              ul
+                li.cat-color.cat-grey.active
+                  a(href='https://nogibogi.com/') Главная
+                li.cat-color.cat-azure
+                  a(href='category/beginners') Начинающим
+                li.cat-color.cat-red
+                  a(href='category/training') Тренировки
+                li.cat-color.cat-turquoise
+                  a(href='category/motivation') Мотивация
+                li.cat-color.cat-scarlet
+                  a(href='category/nutrition') Питание
+                li.cat-color.cat-grey
+                  a(href='category/equipment') Экипировка
+                li.cat-color.cat-pink
+                  a(href='category/womens-running') Женщинам
+                li.cat-color.cat-green
+                  a(href='category/race-calendar') Календарь
+  // #site-navigation
+  // #masthead
