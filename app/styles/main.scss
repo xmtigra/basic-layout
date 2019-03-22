@@ -1,5 +1,14 @@
-// vendor
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import 'reboot';
 
-// main
-@import '_default.scss';
+@import 'button';
+@import 'form';
+@import 'checkbox';
+@import 'dropdown';
+@import 'color';
+@import 'logo';
+@import 'modal';
+@import 'search';
+@import 'pagination';
+@import 'breadcrumb';
+@import 'text';
+@import 'fonts';
