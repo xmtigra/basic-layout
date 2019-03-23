@@ -233,3 +233,133 @@ $icon-font-path: '../fonts/';
   font-weight: 900;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansLight.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansLight.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansLight.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansLight.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansLight.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansLight.svg#OpenSansLight') format('svg');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansLightItalic.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansLightItalic.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansLightItalic.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansLightItalic.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansLightItalic.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansLightItalic.svg#OpenSansLightItalic') format('svg');
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansRegular.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansRegular.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansRegular.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansRegular.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansRegular.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansRegular.svg#OpenSansRegular') format('svg');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansItalic.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansItalic.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansItalic.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansItalic.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansItalic.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansItalic.svg#OpenSansItalic') format('svg');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansSemiBold.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansSemiBold.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBold.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBold.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBold.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBold.svg#OpenSansSemiBold') format('svg');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansSemiBoldItalic.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansSemiBoldItalic.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBoldItalic.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBoldItalic.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBoldItalic.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansSemiBoldItalic.svg#OpenSansSemiBoldItalic') format('svg');
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansBold.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansBold.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansBold.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansBold.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansBold.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansBold.svg#OpenSansBold') format('svg');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansBoldItalic.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansBoldItalic.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansBoldItalic.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansBoldItalic.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansBoldItalic.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansBoldItalic.svg#OpenSansBoldItalic') format('svg');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansExtraBold.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansExtraBold.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBold.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBold.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBold.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBold.svg#OpenSansExtraBold') format('svg');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url($icon-font-path + 'OpenSans/OpenSansExtraBoldItalic.eot');
+  src: url($icon-font-path + 'OpenSans/OpenSansExtraBoldItalic.eot') format('embedded-opentype'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBoldItalic.woff2') format('woff2'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBoldItalic.woff') format('woff'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBoldItalic.ttf') format('truetype'),
+    url($icon-font-path + 'OpenSans/OpenSansExtraBoldItalic.svg#OpenSansExtraBoldItalic') format('svg');
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
