@@ -12,7 +12,53 @@
 </head>
 
 <body>
-
+  <div class="pagination" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+    <ul class="pagination__ul">
+      <li class="pagination__li">
+        <a itemprop="url" href="/frontend?page=5" class="pagination__a" rel="prev"><span itemprop="name">Prev</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=1"><span itemprop="name">1</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend"><span itemprop="name">...</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=3"><span itemprop="name">3</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=4"><span itemprop="name">4</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=5"><span itemprop="name">5</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a pagination__a_active" itemprop="url" href="/frontend?page=6"><span
+            itemprop="name">6</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=7"><span itemprop="name">7</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=8"><span itemprop="name">8</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=9"><span itemprop="name">9</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=10"><span itemprop="name">10</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend"><span itemprop="name">...</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=62"><span itemprop="name">62</span></a>
+      </li>
+      <li class="pagination__li">
+        <a itemprop="url" href="/frontend?page=7" class="pagination__a" rel="next"><span itemprop="name">Next</span></a>
+      </li>
+    </ul>
+  </div>
 
   <table width="100%" border="1">
     <caption>Typography</caption>
@@ -249,6 +295,36 @@
 
     </tbody>
   </table>
+
+  <svg style="display:none;">
+    <symbol id="eye" viewBox="0 0 22 13">
+      <path
+        d="M18.9754 3.3136C14.5573 -1.10453 7.36913 -1.10453 2.951 3.3136L0 6.26423L3.02421 9.28843C5.23309 11.4973 8.13466 12.6021 11.0366 12.6021C13.9385 12.6021 16.8397 11.4977 19.049 9.28843L22 6.33743L18.9754 3.3136ZM18.5232 8.76297C14.3949 12.8909 7.67794 12.8909 3.54967 8.76297L1.05093 6.26423L3.47646 3.83869C7.60474 -0.28921 14.3217 -0.28921 18.45 3.83869L20.9487 6.33743L18.5232 8.76297Z"
+        fill="#686868" />
+      <path
+        d="M10.6169 3.31689C9.1825 3.31689 8.01562 4.48377 8.01562 5.9182C8.01562 6.12333 8.18211 6.28982 8.38724 6.28982C8.59237 6.28982 8.75886 6.12333 8.75886 5.9182C8.75886 4.89366 9.59239 4.06013 10.6169 4.06013C10.8221 4.06013 10.9885 3.89364 10.9885 3.68851C10.9885 3.48338 10.8224 3.31689 10.6169 3.31689Z"
+        fill="#686868" />
+      <path
+        d="M10.9892 1.45898C8.32546 1.45898 6.1582 3.62625 6.1582 6.28998C6.1582 8.95372 8.32546 11.121 10.9892 11.121C13.6529 11.121 15.8202 8.95372 15.8202 6.28998C15.8202 3.62625 13.6533 1.45898 10.9892 1.45898ZM10.9892 10.3778C8.73536 10.3778 6.90143 8.54383 6.90143 6.28998C6.90143 4.03614 8.73536 2.20222 10.9892 2.20222C13.243 2.20222 15.077 4.03614 15.077 6.28998C15.077 8.54383 13.2434 10.3778 10.9892 10.3778Z"
+        fill="#686868" />
+    </symbol>
+    <symbol id="search" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M9.61132 18.2068C14.3672 18.2068 18.2226 14.3549 18.2226 9.60338C18.2226 4.85186 14.3672 1 9.61132 1C4.85542 1 1 4.85186 1 9.60338C1 14.3549 4.85542 18.2068 9.61132 18.2068Z"
+        stroke="#979797" />
+      <path d="M15.8301 15.817L20.9995 21" stroke="#979797" stroke-linecap="square" />
+    </symbol>
+
+  </svg>
+
+  <svg>
+    <use xlink:href="#eye"></use>
+  </svg>
+
+  <svg>
+    <use xlink:href="#search"></use>
+  </svg>
+
 
   <!-- build:js scripts/main.js-->
   <script src="scripts/main.js"></script>

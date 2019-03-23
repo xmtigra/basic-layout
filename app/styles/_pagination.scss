@@ -1,0 +1,99 @@
+@import 'variables';
+
+.pagination {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+
+  &__ul {
+    margin: 0;
+    font-size: 0;
+  }
+
+  &__li {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    // min-width: 36px;
+
+    &:before {
+      content: none;
+    }
+  }
+
+  &__a {
+    // color: $color-text-2;
+    display: inline-block;
+    padding: 11px 11px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 400;
+    min-width: 36px;
+    min-height: 36px;
+
+    // background: $color-background-2;
+    &:hover,
+    &:focus,
+    &_active {
+      text-decoration: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:hover:not(.pagination__a_active),
+    &:focus:not(.pagination__a_active) {
+      background-color: rgba($eighth-color, 0.5);
+      color: $black-color;
+    }
+
+    &_active {
+      font-weight: 700;
+      color: $white-color;
+      background: $fifth-color;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    &:hover.pagination__a_active,
+    &:focus.pagination__a_active {
+      color: $white-color;
+    }
+
+
+    &[rel] {
+      font-size: 0;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='21' viewBox='0 0 12 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.3125 0.25C1.22135 0.25 1.13672 0.266276 1.05859 0.298828C0.980469 0.33138 0.908854 0.380208 0.84375 0.445312C0.713541 0.575521 0.648438 0.735025 0.648438 0.923828C0.648438 1.11263 0.713541 1.27213 0.84375 1.40234L9.75 10.3086L0.960938 19.0977C0.830729 19.2279 0.765625 19.3841 0.765625 19.5664C0.765625 19.7487 0.830729 19.9049 0.960938 20.0352C1.09115 20.1654 1.25065 20.2305 1.43945 20.2305C1.62826 20.2305 1.78776 20.1654 1.91797 20.0352L11.1758 10.7773C11.306 10.6471 11.3711 10.4909 11.3711 10.3086C11.3711 10.1263 11.306 9.97005 11.1758 9.83984L1.78125 0.445312C1.71615 0.380208 1.64128 0.33138 1.55664 0.298828C1.472 0.266276 1.39062 0.25 1.3125 0.25Z' fill='%234D4D4D'/%3E%3C/svg%3E") center no-repeat;
+        // background: url('../images//arrow-pagination.svg') center no-repeat;
+      }
+    }
+
+    &[rel="prev"] {
+      transform: rotate(180deg);
+    }
+
+    &[rel="next"] {
+      position: relative;
+    }
+  }
+
+}
