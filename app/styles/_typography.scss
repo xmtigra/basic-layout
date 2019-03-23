@@ -1,3 +1,5 @@
+@import 'variables';
+
 h1,
 .h1,
 h2,
@@ -130,9 +132,163 @@ h6,
 }
 
 .ff-open-sans {
-  font-family: 'Open Sans', sans-serif
+  font-family: $primary-font, sans-serif
 }
 
 .ff-montserrat {
-  font-family: 'Montserrat', sans-serif
+  font-family: $secondary-font, sans-serif
+}
+
+.text-os-300 {
+  @extend .ff-open-sans;
+  @extend .fw-300;
+}
+
+.text-os-300-i {
+  @extend .ff-open-sans;
+  @extend .fw-300;
+  @extend .fs-italic;
+}
+
+.text-os-400 {
+  @extend .ff-open-sans;
+  @extend .fw-400;
+}
+
+.text-os-400-i {
+  @extend .ff-open-sans;
+  @extend .fw-400;
+  @extend .fs-italic;
+}
+
+.text-os-600 {
+  @extend .ff-open-sans;
+  @extend .fw-600;
+}
+
+.text-os-600-i {
+  @extend .ff-open-sans;
+  @extend .fw-600;
+  @extend .fs-italic;
+}
+
+.text-os-700 {
+  @extend .ff-open-sans;
+  @extend .fw-700;
+}
+
+.text-os-700-i {
+  @extend .ff-open-sans;
+  @extend .fw-700;
+  @extend .fs-italic;
+}
+
+.text-os-800 {
+  @extend .ff-open-sans;
+  @extend .fw-800;
+}
+
+.text-os-800-i {
+  @extend .ff-open-sans;
+  @extend .fw-800;
+  @extend .fs-italic;
+}
+
+.text-m-100 {
+  @extend .ff-montserrat;
+  @extend .fw-100;
+}
+
+.text-m-100-i {
+  @extend .ff-montserrat;
+  @extend .fw-100;
+  @extend .fs-italic;
+}
+
+.text-m-200 {
+  @extend .ff-montserrat;
+  @extend .fw-200;
+}
+
+.text-m-200-i {
+  @extend .ff-montserrat;
+  @extend .fw-200;
+  @extend .fs-italic;
+}
+
+.text-m-300 {
+  @extend .ff-montserrat;
+  @extend .fw-300;
+}
+
+.text-m-300-i {
+  @extend .ff-montserrat;
+  @extend .fw-300;
+  @extend .fs-italic;
+}
+
+.text-m-400 {
+  @extend .ff-montserrat;
+  @extend .fw-400;
+}
+
+.text-m-400-i {
+  @extend .ff-montserrat;
+  @extend .fw-400;
+  @extend .fs-italic;
+}
+
+.text-m-500 {
+  @extend .ff-montserrat;
+  @extend .fw-500;
+}
+
+.text-m-500-i {
+  @extend .ff-montserrat;
+  @extend .fw-500;
+  @extend .fs-italic;
+}
+
+.text-m-600 {
+  @extend .ff-montserrat;
+  @extend .fw-600;
+}
+
+.text-m-600-i {
+  @extend .ff-montserrat;
+  @extend .fw-600;
+  @extend .fs-italic;
+}
+
+.text-m-700 {
+  @extend .ff-montserrat;
+  @extend .fw-700;
+}
+
+.text-m-700-i {
+  @extend .ff-montserrat;
+  @extend .fw-700;
+  @extend .fs-italic;
+}
+
+.text-m-800 {
+  @extend .ff-montserrat;
+  @extend .fw-800;
+}
+
+.text-m-800-i {
+  @extend .ff-montserrat;
+  @extend .fw-800;
+  @extend .fs-italic;
+}
+
+.text-m-900 {
+  @extend .ff-montserrat;
+  @extend .fw-900;
+}
+
+.text-m-900-i {
+  @extend .ff-montserrat;
+  @extend .fw-900;
+  @extend .fs-italic;
 }
