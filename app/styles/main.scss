@@ -1,8 +1,11 @@
+$icomoon-font-path: '../fonts/icons/';
+
 @import 'variables';
 @import 'reboot';
 
 @import 'typography';
 @import 'fonts';
+@import 'icons/style';
 
 @import 'button';
 @import 'form';
