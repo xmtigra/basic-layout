@@ -1,0 +1,86 @@
+[class^="btn"] {
+  text-decoration: none;
+  background: transparent;
+  &:hover {
+    text-decoration: none;
+    background: transparent;
+  }
+  &:disabled, 
+  &.btn-disabled {
+    pointer-events: none;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.btn {
+  border-radius: 2px;
+  background: #7F00AC;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  font-style: normal;
+  padding: 0;
+  border: none;
+  line-height: 1;
+  font-size: 14px;
+  padding: 13px;
+  min-width: 130px;
+  display: inline-block;
+  &:hover {
+    background: #5D38DB;
+    color: #FFFFFF;
+  }
+}
+
+.btn-outline {
+  border: 1px solid #C1C1C1;
+  border-radius: 2px;
+  color: #686868;
+  line-height: 1;
+  padding: 0;
+  font-size: 14px;
+  padding: 13px;
+  min-width: 130px;
+  display: inline-block;
+  text-align: center;
+  &:hover {
+    border: 1px solid #7F00AC;
+    color: #7F00AC;
+  }
+}
+
+.btn-link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: normal;
+  color: #7F00AC;
+  background: transparent;
+  border: none;
+  padding: 0 7px;
+  line-height: 1;
+  &:hover {
+    color: #5D38DB;
+    background: transparent;
+  }
+}
+
+.btn-lite {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: normal;
+  color: rgba(#686868,0.7);
+  line-height: 1;
+  border: none;
+  padding: 0 7px;
+  &:hover {
+    color: #2F2F2F;
+    border: none;
+  }
+}
+
+
