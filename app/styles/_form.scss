@@ -1,0 +1,124 @@
+@import "./icons/variables.scss";
+
+.form {
+  &-group {}
+
+  &-input {
+    &[type="checkbox"] {
+      +.form-label {
+
+        padding: 0 0 0 30px;
+        position: relative;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+        }
+
+        &:before {
+          width: 20px;
+          height: 20px;
+          background: #fff;
+          border: 1px solid #686868;
+          box-sizing: border-box;
+          border-radius: 2px;
+        }
+
+      }
+
+      &:checked+.form-label {
+        &:before {
+          border-color: #5D38DB;
+        }
+
+        &:after {
+          font-family: '#{$icomoon-font-family}';
+          width: 13px;
+          height: 10px;
+          left: 3px;
+          content: $icon-check;
+          line-height: 1;
+          top: -2px;
+          color: #5D38DB;
+          font-size: 13px;
+        }
+      }
+
+      &:focus+.form-label {
+        &:before {
+          border-color: #7F00AC;
+        }
+
+        &:after {
+          color: #7F00AC;
+        }
+      }
+    }
+
+    &[type="radio"] {
+      +.form-label {
+
+        padding: 0 0 0 30px;
+        position: relative;
+
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          margin: auto;
+        }
+
+        &:before {
+          width: 20px;
+          height: 20px;
+          background: #fff;
+          border: 2px solid #5D38DB;
+          border-radius: 50%;
+        }
+
+      }
+
+      &:checked+.form-label {
+        &:before {
+          border-color: #5D38DB;
+        }
+
+        &:after {
+          width: 10px;
+          height: 10px;
+          left: 5px;
+          background: #5D38DB;
+          border-radius: 50%;
+        }
+      }
+
+      &:focus+.form-label {
+        &:before {
+          border-color: #7F00AC;
+        }
+
+        &:after {
+          background: #7F00AC;
+        }
+      }
+    }
+  }
+
+  &-label {
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #686868;
+    user-select: none;
+  }
+}

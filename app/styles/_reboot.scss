@@ -344,3 +344,26 @@ template {
 [hidden] {
   display: none !important;
 }
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap
+}
+
+.no-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}

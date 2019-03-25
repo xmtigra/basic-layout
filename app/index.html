@@ -13,52 +13,76 @@
 
 <body>
 
+  <form>
+    <div class="form-group">
+      <input type="checkbox" class="form-input visually-hidden" id="l1">
+      <label class="form-label" for="l1">Unchecked</label>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" class="form-input visually-hidden" id="l2" checked>
+      <label class="form-label" for="l2">Checked</label>
+    </div>
+
+    <div class="form-group">
+      <input type="radio" class="form-input visually-hidden" id="r1" name="rad">
+      <label class="form-label" for="r1">Unchecked</label>
+    </div>
+    <div class="form-group">
+      <input type="radio" class="form-input visually-hidden" id="r2" name="rad">
+      <label class="form-label" for="r2">Unchecked</label>
+    </div>
+    <div class="form-group">
+      <input type="radio" class="form-input visually-hidden" id="r3" name="rad" checked>
+      <label class="form-label" for="r3">Checked</label>
+    </div>
+  </form>
+
   <div class="pagination" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
-      <ul class="pagination__ul">
-        <li class="pagination__li">
-          <a itemprop="url" href="/frontend?page=5" class="pagination__a" rel="prev"><span itemprop="name">Prev</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=1"><span itemprop="name">1</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend"><span itemprop="name">...</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=3"><span itemprop="name">3</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=4"><span itemprop="name">4</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=5"><span itemprop="name">5</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a pagination__a_active" itemprop="url" href="/frontend?page=6"><span
-              itemprop="name">6</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=7"><span itemprop="name">7</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=8"><span itemprop="name">8</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=9"><span itemprop="name">9</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=10"><span itemprop="name">10</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend"><span itemprop="name">...</span></a>
-        </li>
-        <li class="pagination__li">
-          <a class="pagination__a" itemprop="url" href="/frontend?page=62"><span itemprop="name">62</span></a>
-        </li>
-        <li class="pagination__li">
-          <a itemprop="url" href="/frontend?page=7" class="pagination__a" rel="next"><span itemprop="name">Next</span></a>
-        </li>
-      </ul>
+    <ul class="pagination__ul">
+      <li class="pagination__li">
+        <a itemprop="url" href="/frontend?page=5" class="pagination__a" rel="prev"><span itemprop="name">Prev</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=1"><span itemprop="name">1</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend"><span itemprop="name">...</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=3"><span itemprop="name">3</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=4"><span itemprop="name">4</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=5"><span itemprop="name">5</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a pagination__a_active" itemprop="url" href="/frontend?page=6"><span
+            itemprop="name">6</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=7"><span itemprop="name">7</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=8"><span itemprop="name">8</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=9"><span itemprop="name">9</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=10"><span itemprop="name">10</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend"><span itemprop="name">...</span></a>
+      </li>
+      <li class="pagination__li">
+        <a class="pagination__a" itemprop="url" href="/frontend?page=62"><span itemprop="name">62</span></a>
+      </li>
+      <li class="pagination__li">
+        <a itemprop="url" href="/frontend?page=7" class="pagination__a" rel="next"><span itemprop="name">Next</span></a>
+      </li>
+    </ul>
   </div>
 
   <table width="100%" border="1">
@@ -98,7 +122,8 @@
           <a class="btn-lite btn-disabled" href="">Light button</a>
         </td>
       </tr>
-  </tbody>
+    </tbody>
+  </table>
 
   <table width="100%" border="1">
     <caption>Typography</caption>
@@ -148,7 +173,8 @@
       <tr>
         <td>p, text-common</td>
         <td>
-          <div class="text-common">Курс Swift Professional состоит из 10-ти уроков, на протяжении которых учащиеся освоят разнообразные практики профессиональной разработки для операционной системы iOS.</div>
+          <div class="text-common">Курс Swift Professional состоит из 10-ти уроков, на протяжении которых учащиеся
+            освоят разнообразные практики профессиональной разработки для операционной системы iOS.</div>
         </td>
       </tr>
       <tr>
@@ -336,95 +362,95 @@
   </table>
 
   <table width="100%" border="1">
-      <caption>Icons</caption>
-      <tr>
-          <td class="mls" width="200px">icon-arrow-down</td>
-          <td class="icon icon-arrow-down"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-arrow</td>
-          <td class="icon icon-arrow"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-calendar</td>
-          <td class="icon icon-calendar"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-check</td>
-          <td class="icon icon-check"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-close</td>
-          <td class="icon icon-close"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-eye-close</td>
-          <td class="icon icon-eye-close"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-eye</td>
-          <td class="icon icon-eye"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-filter</td>
-          <td class="icon icon-filter"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-heart-full</td>
-          <td class="icon icon-heart-full"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-heart</td>
-          <td class="icon icon-heart"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-language</td>
-          <td class="icon icon-language"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-latter</td>
-          <td class="icon icon-latter"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-lesson</td>
-          <td class="icon icon-lesson"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-logo</td>
-          <td class="icon icon-logo"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-search</td>
-          <td class="icon icon-search"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-sort</td>
-          <td class="icon icon-sort"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-source</td>
-          <td class="icon icon-source"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-star-full</td>
-          <td class="icon icon-star-full"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-star</td>
-          <td class="icon icon-star"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-success</td>
-          <td class="icon icon-success"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-time</td>
-          <td class="icon icon-time"></td>
-      </tr>
-      <tr>
-          <td class="mls">icon-user</td>
-          <td class="icon icon-user"></td>
-      </tr>
+    <caption>Icons</caption>
+    <tr>
+      <td class="mls" width="200px">icon-arrow-down</td>
+      <td class="icon icon-arrow-down"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-arrow</td>
+      <td class="icon icon-arrow"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-calendar</td>
+      <td class="icon icon-calendar"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-check</td>
+      <td class="icon icon-check"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-close</td>
+      <td class="icon icon-close"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-eye-close</td>
+      <td class="icon icon-eye-close"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-eye</td>
+      <td class="icon icon-eye"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-filter</td>
+      <td class="icon icon-filter"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-heart-full</td>
+      <td class="icon icon-heart-full"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-heart</td>
+      <td class="icon icon-heart"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-language</td>
+      <td class="icon icon-language"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-latter</td>
+      <td class="icon icon-latter"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-lesson</td>
+      <td class="icon icon-lesson"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-logo</td>
+      <td class="icon icon-logo"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-search</td>
+      <td class="icon icon-search"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-sort</td>
+      <td class="icon icon-sort"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-source</td>
+      <td class="icon icon-source"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-star-full</td>
+      <td class="icon icon-star-full"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-star</td>
+      <td class="icon icon-star"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-success</td>
+      <td class="icon icon-success"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-time</td>
+      <td class="icon icon-time"></td>
+    </tr>
+    <tr>
+      <td class="mls">icon-user</td>
+      <td class="icon icon-user"></td>
+    </tr>
   </table>
 
   <!-- build:js scripts/main.js-->
