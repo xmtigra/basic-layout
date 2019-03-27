@@ -122,3 +122,85 @@
     user-select: none;
   }
 }
+
+
+
+.material {
+  &-group {
+    position: relative;
+    margin: 45px 0;
+  }
+
+  &-textarea {
+    resize: none;
+  }
+
+  &-input,
+  &-textarea {
+    font-family: 'Open Sans', sans-serif;
+    background: none;
+    color: #7F00AC;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 9px 10px 7px 0px;
+    display: block;
+    max-width: 380px;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #D8D8D8;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus~.material-label,
+    &:valid~.material-label {
+      top: -14px;
+      color: rgba(#979797, 0.9);
+      font-weight: 300;
+      font-size: 13px;
+      ;
+    }
+
+    &:focus~.material-bar:before {
+      width: 100%;
+    }
+  }
+
+  &-input[type="password"] {
+    letter-spacing: 0.3em;
+  }
+
+  &-label {
+    color: #979797;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: 10px;
+    transition: 300ms ease all;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  &-bar {
+    position: relative;
+    display: block;
+    max-width: 380px;
+
+    &:before {
+      content: '';
+      height: 2px;
+      width: 0;
+      bottom: 0px;
+      position: absolute;
+      background: #7F00AC;
+      transition: 300ms ease all;
+      left: 0%;
+    }
+  }
+}
