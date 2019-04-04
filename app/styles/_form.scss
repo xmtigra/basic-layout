@@ -125,11 +125,11 @@
 }
 
 
-
 .material {
   &-group {
     position: relative;
-    margin: 45px 0;
+    padding: 30px 0 0;
+    margin-bottom: 10px;
   }
 
   &-textarea {
@@ -158,7 +158,7 @@
 
     &:focus~.material-label,
     &:valid~.material-label {
-      top: -14px;
+      top: 7px;
       color: rgba(#979797, 0.9);
       font-weight: 300;
       font-size: 13px;
@@ -179,14 +179,16 @@
     font-weight: normal;
     position: absolute;
     pointer-events: none;
-    left: 0px;
-    top: 10px;
+    left: 0;
     transition: 300ms ease all;
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: normal;
+    top: 40px;
+    margin: auto;
+    height: 20px;
   }
 
   &-bar {
