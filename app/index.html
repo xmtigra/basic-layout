@@ -13,22 +13,17 @@
 
 <body style="padding: 0 30px; max-width: 2000px; margin: 0 auto; background: lightblue">
 
-
-  <form class="search">
-    <label class="search-label">
-      <input type="search" class="search-input" placeholder="Please search what you need...">
-    </label>
+  <form class="search" autocomplete="off">
+    <input type="search" class="search-input" placeholder="Please search what you need..." id="mainSearch">
     <div class="search-result">
-      <a href="#" class="search-result-item">1</a>
-      <a href="#" class="search-result-item">2</a>
-      <a href="#" class="search-result-item">3</a>
-      <a href="#" class="search-result-item">4</a>
+      <a href="#1" class="search-result-item">Swift technology</a>
+      <a href="#2" class="search-result-item">Apple applications</a>
+      <a href="#3" class="search-result-item">Swift</a>
+      <a href="#4" class="search-result-item">MAC</a>
     </div>
   </form>
 
-
-
-  <form>
+  <form autocomplete="off">
     <div class="material-group">
       <input class="material-input" type="text" required>
       <span class="material-bar"></span>
@@ -56,17 +51,7 @@
     </div>
   </form>
 
-
-
-
-
-
-
-
-
-
-
-  <form>
+  <form autocomplete="off">
     <div class="form-group">
       <input type="checkbox" class="form-input visually-hidden" id="l1">
       <label class="form-label" for="l1">Unchecked</label>
@@ -89,7 +74,7 @@
     </div>
   </form>
 
-  <form action="">
+  <form autocomplete="off">
     <label class="switch">
       <input class="switch__input" type="checkbox">
       <span class="switch__slider"></span>
