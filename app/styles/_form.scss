@@ -125,8 +125,11 @@
   &-select {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
+    display: block;
+    width: 100%;
     font-weight: normal;
     font-size: 14px;
+    max-width: 380px;
     line-height: normal;
     color: #7F00AC;
     background: #fff;
