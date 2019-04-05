@@ -11,6 +11,7 @@ $icomoon-font-path: '../fonts/icons/';
 @import 'form';
 @import 'checkbox';
 @import 'dropdown';
+@import 'chip';
 
 @import 'logo';
 @import 'modal';
@@ -18,11 +19,3 @@ $icomoon-font-path: '../fonts/icons/';
 @import 'switch';
 @import 'pagination';
 @import 'breadcrumb';
-
-.asd {
-  svg {
-    width: 50px;
-    height: 50px;
-    background-color: lightgray;
-  }
-}

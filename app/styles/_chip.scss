@@ -1,0 +1,48 @@
+.chip {
+  &-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #686868;
+  }
+
+  &-close {
+    font-size: 10px;
+    line-height: 10px;
+    color: #979797;
+    padding: 7px;
+  }
+
+  &-item {
+    cursor: pointer;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 16px rgba(226, 230, 245, 0.801461);
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+    padding: 6px 2px 6px 10px;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    margin: 0 8px 8px 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      outline: none;
+      background-color: #7F00AC;
+
+      .chip-text {
+        color: #fff;
+
+      }
+
+      .chip-close {
+        color: #fff;
+      }
+    }
+  }
+}

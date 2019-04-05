@@ -2,15 +2,14 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?trr9d5') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?trr9d5') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?trr9d5##{$icomoon-font-family}') format('svg');
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?trr9d5') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?trr9d5') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?trr9d5##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-.icon {
+[class^="icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: '#{$icomoon-font-family}' !important;
   speak: none;
@@ -27,112 +26,132 @@
 
 .icon-arrow-down {
   &:before {
-    content: $icon-arrow-down; 
-  }
-}
-.icon-arrow {
-  &:before {
-    content: $icon-arrow; 
-  }
-}
-.icon-calendar {
-  &:before {
-    content: $icon-calendar; 
-  }
-}
-.icon-check {
-  &:before {
-    content: $icon-check; 
-  }
-}
-.icon-close {
-  &:before {
-    content: $icon-close; 
-  }
-}
-.icon-eye-close {
-  &:before {
-    content: $icon-eye-close; 
-  }
-}
-.icon-eye {
-  &:before {
-    content: $icon-eye; 
-  }
-}
-.icon-filter {
-  &:before {
-    content: $icon-filter; 
-  }
-}
-.icon-heart-full {
-  &:before {
-    content: $icon-heart-full; 
-  }
-}
-.icon-heart {
-  &:before {
-    content: $icon-heart; 
-  }
-}
-.icon-language {
-  &:before {
-    content: $icon-language; 
-  }
-}
-.icon-latter {
-  &:before {
-    content: $icon-latter; 
-  }
-}
-.icon-lesson {
-  &:before {
-    content: $icon-lesson; 
-  }
-}
-.icon-logo {
-  &:before {
-    content: $icon-logo; 
-  }
-}
-.icon-search {
-  &:before {
-    content: $icon-search; 
-  }
-}
-.icon-sort {
-  &:before {
-    content: $icon-sort; 
-  }
-}
-.icon-source {
-  &:before {
-    content: $icon-source; 
-  }
-}
-.icon-star-full {
-  &:before {
-    content: $icon-star-full; 
-  }
-}
-.icon-star {
-  &:before {
-    content: $icon-star; 
-  }
-}
-.icon-success {
-  &:before {
-    content: $icon-success; 
-  }
-}
-.icon-time {
-  &:before {
-    content: $icon-time; 
-  }
-}
-.icon-user {
-  &:before {
-    content: $icon-user; 
+    content: $icon-arrow-down;
   }
 }
 
+.icon-arrow {
+  &:before {
+    content: $icon-arrow;
+  }
+}
+
+.icon-calendar {
+  &:before {
+    content: $icon-calendar;
+  }
+}
+
+.icon-check {
+  &:before {
+    content: $icon-check;
+  }
+}
+
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+
+.icon-eye-close {
+  &:before {
+    content: $icon-eye-close;
+  }
+}
+
+.icon-eye {
+  &:before {
+    content: $icon-eye;
+  }
+}
+
+.icon-filter {
+  &:before {
+    content: $icon-filter;
+  }
+}
+
+.icon-heart-full {
+  &:before {
+    content: $icon-heart-full;
+  }
+}
+
+.icon-heart {
+  &:before {
+    content: $icon-heart;
+  }
+}
+
+.icon-language {
+  &:before {
+    content: $icon-language;
+  }
+}
+
+.icon-latter {
+  &:before {
+    content: $icon-latter;
+  }
+}
+
+.icon-lesson {
+  &:before {
+    content: $icon-lesson;
+  }
+}
+
+.icon-logo {
+  &:before {
+    content: $icon-logo;
+  }
+}
+
+.icon-search {
+  &:before {
+    content: $icon-search;
+  }
+}
+
+.icon-sort {
+  &:before {
+    content: $icon-sort;
+  }
+}
+
+.icon-source {
+  &:before {
+    content: $icon-source;
+  }
+}
+
+.icon-star-full {
+  &:before {
+    content: $icon-star-full;
+  }
+}
+
+.icon-star {
+  &:before {
+    content: $icon-star;
+  }
+}
+
+.icon-success {
+  &:before {
+    content: $icon-success;
+  }
+}
+
+.icon-time {
+  &:before {
+    content: $icon-time;
+  }
+}
+
+.icon-user {
+  &:before {
+    content: $icon-user;
+  }
+}
