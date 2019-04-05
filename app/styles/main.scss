@@ -19,3 +19,9 @@ $icomoon-font-path: '../fonts/icons/';
 @import 'switch';
 @import 'pagination';
 @import 'breadcrumb';
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
