@@ -63,6 +63,4 @@ typings/
 .tmp
 .DS_Store
 
-*.html
-
 ./dist
