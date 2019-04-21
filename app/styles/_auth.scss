@@ -65,6 +65,14 @@
     padding-top: 40px;
   }
 
+  &-success {
+    font-size: 75px;
+    color: #7F00AC;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
   @media screen and (min-width: 576px) {
     &-box {
       padding-top: 15vh;
