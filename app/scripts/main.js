@@ -28,7 +28,7 @@ if (body && body.length) {
     var isForm = event.target.closest('.search');
     var mainSearch = body.querySelector('.search');
     if (!isForm) {
-      if (mainSearch.classList.contains('search-active')) {
+      if (mainSearch && mainSearch.classList.contains('search-active')) {
         mainSearch.classList.remove('search-active');
       }
     }

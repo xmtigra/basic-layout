@@ -1,0 +1,42 @@
+.auth {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 380px;
+  padding-bottom: 20px;
+
+
+  &-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &-group {
+    display: flex;
+    padding: 6px 0px;
+    margin-bottom: 55px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-a {
+    font-size: 12px;
+    color: #7C7C7C;
+    font-style: normal;
+    line-height: normal;
+    font-weight: normal;
+    text-decoration-line: underline;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &-box {
+    font-size: 0;
+    padding-top: 40px;
+    height: calc(100vh - 76px);
+  }
+
+  @media screen and (min-width: 576px) {
+    &-box {
+      padding-top: 15vh;
+    }
+  }
+}

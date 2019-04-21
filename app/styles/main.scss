@@ -21,9 +21,25 @@ $icomoon-font-path: '../fonts/icons/';
 @import 'breadcrumb';
 
 @import 'main-header';
+@import 'main-search';
+@import 'auth';
 
 .container {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 12px;
+}
+
+.text {
+  &-left {
+    text-align: left;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-right {
+    text-align: right;
+  }
 }

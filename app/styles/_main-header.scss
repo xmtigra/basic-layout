@@ -43,14 +43,21 @@
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-    // margin: 0 10px;
 
     &:hover {
       text-decoration: none;
     }
 
-    .main-header-side-right & {
-      margin-left: 20px;
+  }
+
+  &-donate {
+    display: none;
+  }
+
+  @media screen and (min-width: 576px) {
+    &-donate {
+      display: block;
+      margin-right: 20px;
     }
   }
 }

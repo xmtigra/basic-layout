@@ -41,6 +41,14 @@
     min-width: 100px;
     text-transform: uppercase;
   }
+
+  .btn-group & {
+    margin: 0 10px;
+  }
+
+  &-group {
+    text-align: center;
+  }
 }
 
 .btn-outline {
@@ -48,9 +56,10 @@
   border-radius: 2px;
   color: #686868;
   line-height: 1;
-  padding: 0;
-  font-size: 14px;
-  padding: 13px;
+  font-size: 15px;
+  line-height: 16px;
+  padding: 11px;
+  font-size: 15px;
   min-width: 130px;
   display: inline-block;
   text-align: center;
@@ -58,6 +67,10 @@
   &:hover {
     border: 1px solid #7F00AC;
     color: #7F00AC;
+  }
+
+  .btn-group & {
+    margin-bottom: 10px;
   }
 }
 
