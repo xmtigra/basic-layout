@@ -34,6 +34,11 @@
     height: calc(100vh - 76px);
   }
 
+  &-btn {
+    text-align: center;
+    padding-top: 40px;
+  }
+
   @media screen and (min-width: 576px) {
     &-box {
       padding-top: 15vh;
