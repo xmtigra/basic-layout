@@ -39,9 +39,6 @@
 
 .categories {
   font-size: 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   padding: 20px 0;
 
   &-item {
@@ -74,5 +71,25 @@
     margin-right: 17px;
   }
 
-  &-name {}
+  @media screen and (min-width: 576px) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    &-item {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+
+    &-item {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+
 }

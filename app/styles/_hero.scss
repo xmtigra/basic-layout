@@ -1,0 +1,32 @@
+.hero {
+
+  padding: 110px 0;
+
+  &-title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: normal;
+    text-align: center;
+    color: #2F2F2F;
+    margin-bottom: 10px;
+  }
+
+  &-description {
+    max-width: 782px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    line-height: normal;
+    color: #979797;
+    margin: 0 auto 40px;
+  }
+
+  &-search {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}

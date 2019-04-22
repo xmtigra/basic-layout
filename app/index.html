@@ -35,22 +35,26 @@
     </div>
   </header>
 
-  <div itemtype="https://schema.org/BreadcrumbList">
+  <div class="hero">
     <div class="container">
-      <div class="breadcrumbs">
-        <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumbs__span">
-          <a class="breadcrumbs__a" itemprop="item" href="/">
-            <span itemprop="name">Main page</span>
-          </a>
-        </span>
-        <a class="breadcrumbs__a breadcrumbs__a_active" href="/all_cources">All sources</a>
+      <h1 class="hero-title">Welcome to Course Hunters.</h1>
+      <p class="hero-description">
+        We will remove the issue of availability and price on your way to learning new skills
+      </p>
+      <div class="hero-search">
+        <form class="search" autocomplete="off">
+          <input type="search" class="search-input" placeholder="Search" id="mainSearch">
+          <div class="search-result">
+            <a href="#1" class="search-result-item">Swift technology</a>
+            <a href="#2" class="search-result-item">Apple applications</a>
+            <a href="#3" class="search-result-item">Swift</a>
+            <a href="#4" class="search-result-item">MAC</a>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 
-
-  <br>
-  <br>
 
   <section class="section-block">
     <div class="container">
@@ -107,15 +111,31 @@
       answers. Answer other questions and discuss topics that you are interested in.</p>
     <a href="#" title="Visit telegram chat" class="section-block-btn btn-outline">Visit telegram chat</a>
   </section>
-  <br>
-  <section class="section-block">
-    <h2 class="section-block-title">Course materials</h2>
-    <p class="section-block-description">This course has attached additional materials. Here you can download them.</p>
-    <a href="#" title="Download course materials" class="section-block-btn btn-outline">Download course materials</a>
-  </section>
 
   <details>
     <summary>All components</summary>
+
+
+    <section class="section-block">
+      <h2 class="section-block-title">Course materials</h2>
+      <p class="section-block-description">This course has attached additional materials. Here you can download them.
+      </p>
+      <a href="#" title="Download course materials" class="section-block-btn btn-outline">Download course materials</a>
+    </section>
+
+    <div itemtype="https://schema.org/BreadcrumbList">
+      <div class="container">
+        <div class="breadcrumbs">
+          <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem" class="breadcrumbs__span">
+            <a class="breadcrumbs__a" itemprop="item" href="/">
+              <span itemprop="name">Main page</span>
+            </a>
+          </span>
+          <a class="breadcrumbs__a breadcrumbs__a_active" href="/all_cources">All sources</a>
+        </div>
+      </div>
+    </div>
+
     <div class="container">
       <ul>
         <li>
@@ -227,16 +247,6 @@
       </form>
 
       <br>
-
-      <form class="search" autocomplete="off">
-        <input type="search" class="search-input" placeholder="Search" id="mainSearch">
-        <div class="search-result">
-          <a href="#1" class="search-result-item">Swift technology</a>
-          <a href="#2" class="search-result-item">Apple applications</a>
-          <a href="#3" class="search-result-item">Swift</a>
-          <a href="#4" class="search-result-item">MAC</a>
-        </div>
-      </form>
 
       <form autocomplete="off">
         <div class="material-group">
