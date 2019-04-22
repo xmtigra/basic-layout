@@ -2,4 +2,28 @@
   background: #2F2F2F;
   padding: 60px 0;
   color: #fff;
+
+  &-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-row {
+    font-size: 0;
+  }
+
+  &-side {
+    width: 100%;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  &-side {}
+
+  @media screen and (min-width: 640px) {
+    &-side {
+      width: 50%;
+    }
+  }
 }

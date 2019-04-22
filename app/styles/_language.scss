@@ -1,0 +1,30 @@
+.language {
+  margin-bottom: 30px;
+
+  &-item {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-right: 30px;
+    text-decoration: none;
+
+    &-active {
+      text-decoration: underline
+    }
+
+    &[href]:hover {
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline
+      }
+    }
+  }
+
+  @media screen and (min-width: 640px) {
+    margin-bottom: 0px;
+  }
+}
