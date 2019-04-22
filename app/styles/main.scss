@@ -24,6 +24,11 @@ $icomoon-font-path: '../fonts/icons/';
 @import 'main-search';
 @import 'auth';
 @import 'breadcrumbs';
+@import 'footer';
+
+.logo path {
+  fill: #fff;
+}
 
 .container {
   max-width: 1170px;
