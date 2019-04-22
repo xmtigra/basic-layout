@@ -46,6 +46,11 @@
     width: 200px;
   }
 
+  &-xxl {
+    width: 100%;
+    max-width: 300px;
+  }
+
   .btn-group & {
     margin: 0 10px;
   }

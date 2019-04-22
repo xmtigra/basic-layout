@@ -1,0 +1,21 @@
+.standard {
+  padding: 20px;
+
+  &-title {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2F2F2F;
+
+
+  }
+
+  &-btn {
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+}
