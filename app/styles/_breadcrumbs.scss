@@ -5,6 +5,11 @@
   text-overflow: ellipsis;
   font-family: 'Open Sans', sans-serif;
 
+  .hero & {
+    position: absolute;
+    top: 25px;
+  }
+
   &_second {
     .breadcrumbs__span:not(:last-child):after {
       content: '|';
@@ -39,8 +44,8 @@
     line-height: 1.2;
 
     &_active {
-      color: #000;
-      pointer-events: none;
+      // color: #000;
+      // pointer-events: none;
     }
 
     &:hover,

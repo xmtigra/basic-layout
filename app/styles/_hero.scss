@@ -1,6 +1,8 @@
 .hero {
-
-  padding: 110px 0;
+  position: relative;
+  padding: 110px 12px;
+  max-width: 1170px;
+  margin: 0 auto;
 
   &-title {
     font-family: Montserrat, sans-serif;
@@ -29,4 +31,5 @@
     max-width: 640px;
     margin: 0 auto;
   }
+
 }
