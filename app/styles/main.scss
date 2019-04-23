@@ -29,7 +29,12 @@ $icomoon-font-path: '../fonts/icons/';
 @import 'language';
 @import 'section-block';
 @import 'standard';
+@import 'popular-categories';
+@import 'categories';
 
+:focus {
+  outline: blue auto 5px;
+}
 
 .container {
   max-width: 1170px;
