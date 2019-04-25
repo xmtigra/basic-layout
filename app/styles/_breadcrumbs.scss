@@ -1,7 +1,7 @@
 .breadcrumbs {
   font-size: 0;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   text-overflow: ellipsis;
   font-family: 'Open Sans', sans-serif;
 
@@ -43,15 +43,15 @@
     text-decoration: none;
     line-height: 1.2;
 
-    &_active {
-      // color: #000;
-      // pointer-events: none;
-    }
+    // &_active {
+    // color: #000;
+    // pointer-events: none;
+    // }
 
-    &:hover,
-    &:focus,
-    &:active {
-      outline: none;
-    }
+    // &:hover,
+    // &:focus,
+    // &:active {
+    //   outline: none;
+    // }
   }
 }
