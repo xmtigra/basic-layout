@@ -1,140 +1,143 @@
-// generated on 2018-08-21 using generator-webapp 3.0.1
 const gulp = require('gulp');
-const gulpLoadPlugins = require('gulp-load-plugins');
-const browserSync = require('browser-sync').create();
-const del = require('del');
-const runSequence = require('run-sequence');
+const babel = require('gulp-babel');
+const postcss = require('gulp-postcss');
+const replace = require('gulp-replace');
+const htmlmin = require('gulp-htmlmin');
+const terser = require('gulp-terser');
+const sync = require('browser-sync');
 
-const $ = gulpLoadPlugins();
-const reload = browserSync.reload;
+// HTML
 
-let dev = true;
+const html = () => {
+    return gulp.src('src/*.html')
+        .pipe(htmlmin({
+            removeComments: true,
+            collapseWhitespace: true,
+        }))
+        .pipe(gulp.dest('dist'))
+        .pipe(sync.stream());
+};
 
-gulp.task('styles', () => {
-  return gulp.src('app/styles/*.scss')
-    .pipe($.plumber())
-    .pipe($.if(dev, $.sourcemaps.init()))
-    .pipe($.sass.sync({
-      outputStyle: 'expanded',
-      precision: 10,
-      includePaths: ['.']
-    }).on('error', $.sass.logError))
-    .pipe($.autoprefixer({ browsers: ['> 1%', 'last 2 versions', 'Firefox ESR'] }))
-    .pipe($.if(dev, $.sourcemaps.write()))
-    .pipe(gulp.dest('.tmp/styles'))
-    .pipe(reload({ stream: true }));
-});
+exports.html = html;
 
-gulp.task('scripts', () => {
-  return gulp.src('app/scripts/**/*.js')
-    .pipe($.plumber())
-    .pipe($.if(dev, $.sourcemaps.init()))
-    .pipe($.babel())
-    .pipe($.if(dev, $.sourcemaps.write('.')))
-    .pipe(gulp.dest('.tmp/scripts'))
-    .pipe(reload({ stream: true }));
-});
+// Styles
 
-function lint(files) {
-  return gulp.src(files)
-    .pipe($.eslint({ fix: true }))
-    .pipe(reload({ stream: true, once: true }))
-    .pipe($.eslint.format())
-    .pipe($.if(!browserSync.active, $.eslint.failAfterError()));
-}
+const styles = () => {
+    return gulp.src('src/styles/**/*.scss')
+        .pipe(postcss([
+            require('autoprefixer'),
+            require('postcss-csso'),
+        ]))
+        .pipe(replace(/\.\.\//g, ''))
+        .pipe(gulp.dest('dist'))
+        .pipe(sync.stream());
+};
 
-gulp.task('lint', () => {
-  return lint('app/scripts/**/*.js')
-    .pipe(gulp.dest('app/scripts'));
-});
+exports.styles = styles;
 
+// Scripts
 
-gulp.task('html', ['styles', 'scripts'], () => {
-  return gulp.src('app/*.html')
-    .pipe($.useref({ searchPath: ['.tmp', 'app', '.'] }))
-    .pipe($.if(/\.js$/, $.uglify({ compress: { drop_console: true } })))
-    .pipe($.if(/\.css$/, $.cssnano({ safe: true, autoprefixer: false })))
-    .pipe($.if(/\.html$/, $.htmlmin({
-      collapseWhitespace: true,
-      minifyCSS: true,
-      minifyJS: { compress: { drop_console: true } },
-      processConditionalComments: true,
-      removeComments: true,
-      removeEmptyAttributes: true,
-      removeScriptTypeAttributes: true,
-      removeStyleLinkTypeAttributes: true
-    })))
-    .pipe(gulp.dest('dist'));
-});
+const scripts = () => {
+    return gulp.src('src/scripts/main.js')
+        .pipe(babel({
+            presets: ['@babel/preset-env']
+        }))
+        .pipe(terser())
+        .pipe(gulp.dest('dist'))
+        .pipe(sync.stream());
+};
 
-gulp.task('images', () => {
-  return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin()))
-    .pipe(gulp.dest('dist/images'));
-});
+exports.scripts = scripts;
 
-gulp.task('fonts', () => {
-  return gulp.src('app/fonts/**/*')
-    .pipe($.if(dev, gulp.dest('.tmp/fonts'), gulp.dest('dist/fonts')));
-});
+// Copy
 
-gulp.task('vendor', () => {
-  return gulp.src('app/vendor/**/*')
-    .pipe($.if(dev, gulp.dest('.tmp/vendor'), gulp.dest('dist/vendor')));
-});
+const copy = () => {
+    return gulp.src([
+        'src/fonts/**/*',
+        'src/images/**/*',
+        'src/vendor/**/*',
+    ], {
+        base: 'src'
+    })
+        .pipe(gulp.dest('dist'))
+        .pipe(sync.stream({
+            once: true
+        }));
+};
 
-gulp.task('extras', () => {
-  return gulp.src([
-    'app/*',
-    '!app/*.html'
-  ], {
-      dot: true
-    }).pipe(gulp.dest('dist'));
-});
+exports.copy = copy;
 
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+// Paths
 
-gulp.task('serve', () => {
-  runSequence(['clean'], ['styles', 'vendor', 'scripts', 'fonts'], () => {
-    browserSync.init({
-      notify: false,
-      port: 9000,
-      server: {
-        baseDir: ['.tmp', 'app'],
-      }
+const paths = () => {
+    return gulp.src('dist/*.html')
+        .pipe(replace(
+            /(<link rel="stylesheet" href=")styles\/(main.scss">)/, '$1$2'
+        ))
+        .pipe(replace(
+            /(<script src=")scripts\/(main.js">)/, '$1$2'
+        ))
+        .pipe(gulp.dest('dist'));
+};
+
+exports.paths = paths;
+
+// Server
+
+const server = () => {
+    sync.init({
+        ui: false,
+        notify: false,
+        server: {
+            baseDir: 'dist'
+        }
     });
+};
 
+exports.server = server;
+
+// Watch
+
+const watch = () => {
+    gulp.watch('src/*.html', gulp.series(html, paths));
+    gulp.watch('src/styles/**/*.scss', gulp.series(styles));
+    gulp.watch('src/scripts/**/*.js', gulp.series(scripts));
     gulp.watch([
-      'app/*.html',
-      'app/images/**/*',
-      'app/vendor/**/*',
-      '.tmp/fonts/**/*'
-    ]).on('change', reload);
+        'src/fonts/**/*',
+        'src/images/**/*',
+        'src/vendor/**/*',
+    ], gulp.series(copy));
+};
 
-    gulp.watch('app/styles/**/*.scss', ['styles']);
-    gulp.watch('app/scripts/**/*.js', ['scripts']);
-    gulp.watch('app/fonts/**/*', ['fonts']);
-  });
-});
+exports.watch = watch;
 
-gulp.task('serve:dist', ['default'], () => {
-  browserSync.init({
-    notify: false,
-    port: 9000,
-    server: {
-      baseDir: ['dist']
-    }
-  });
-});
+// Start
 
-gulp.task('build', ['lint', 'html', 'images', 'vendor', 'fonts', 'extras'], () => {
-  return gulp.src('dist/**/*').pipe($.size({ title: 'build', gzip: true }));
-});
+const start = gulp.series(
+    gulp.parallel(
+        html,
+        styles,
+        scripts,
+        copy,
+    ),
+    paths,
+    gulp.parallel(
+        watch,
+        server,
+    ),
+);
 
-gulp.task('default', () => {
-  return new Promise(resolve => {
-    dev = false;
-    console.log(resolve)
-    runSequence(['clean'], 'build', resolve);
-  });
-});
+
+exports.start = start;
+
+// Default
+
+exports.default = gulp.series(
+    gulp.parallel(
+        html,
+        styles,
+        scripts,
+        copy,
+    ),
+    paths
+);
