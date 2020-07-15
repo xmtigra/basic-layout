@@ -5,6 +5,7 @@ const replace = require('gulp-replace');
 const htmlmin = require('gulp-htmlmin');
 const terser = require('gulp-terser');
 const sync = require('browser-sync');
+const sass = require('gulp-sass');
 
 // HTML
 
@@ -24,12 +25,13 @@ exports.html = html;
 
 const styles = () => {
     return gulp.src('src/styles/**/*.scss')
+        .pipe(sass.sync().on('error', sass.logError))
         .pipe(postcss([
             require('autoprefixer'),
             require('postcss-csso'),
         ]))
         .pipe(replace(/\.\.\//g, ''))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('dist/styles/'))
         .pipe(sync.stream());
 };
 
@@ -67,21 +69,6 @@ const copy = () => {
 
 exports.copy = copy;
 
-// Paths
-
-const paths = () => {
-    return gulp.src('dist/*.html')
-        .pipe(replace(
-            /(<link rel="stylesheet" href=")styles\/(main.scss">)/, '$1$2'
-        ))
-        .pipe(replace(
-            /(<script src=")scripts\/(main.js">)/, '$1$2'
-        ))
-        .pipe(gulp.dest('dist'));
-};
-
-exports.paths = paths;
-
 // Server
 
 const server = () => {
@@ -99,7 +86,7 @@ exports.server = server;
 // Watch
 
 const watch = () => {
-    gulp.watch('src/*.html', gulp.series(html, paths));
+    gulp.watch('src/*.html', gulp.series(html));
     gulp.watch('src/styles/**/*.scss', gulp.series(styles));
     gulp.watch('src/scripts/**/*.js', gulp.series(scripts));
     gulp.watch([
@@ -120,7 +107,6 @@ const start = gulp.series(
         scripts,
         copy,
     ),
-    paths,
     gulp.parallel(
         watch,
         server,
@@ -138,6 +124,5 @@ exports.default = gulp.series(
         styles,
         scripts,
         copy,
-    ),
-    paths
+    )
 );
