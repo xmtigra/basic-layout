@@ -1,11 +1,11 @@
 const gulp = require('gulp');
 const babel = require('gulp-babel');
-const postcss = require('gulp-postcss');
-const replace = require('gulp-replace');
 const htmlmin = require('gulp-htmlmin');
 const terser = require('gulp-terser');
 const sync = require('browser-sync');
 const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('gulp-autoprefixer');
 
 // HTML
 
@@ -25,12 +25,10 @@ exports.html = html;
 
 const styles = () => {
     return gulp.src('src/styles/**/*.scss')
-        .pipe(sass.sync().on('error', sass.logError))
-        .pipe(postcss([
-            require('autoprefixer'),
-            require('postcss-csso'),
-        ]))
-        .pipe(replace(/\.\.\//g, ''))
+        .pipe(sourcemaps.init())
+        .pipe(autoprefixer())
+        .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('dist/styles/'))
         .pipe(sync.stream());
 };
